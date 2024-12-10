@@ -3,7 +3,7 @@ const siteMetadata = {
   title: 'WildFx.io',
   author: 'WildFx',
   headerTitle: 'WildFx.io',
-  description: 'How I became a Microsoft Developer... and so can you!',
+  description: 'How I became a Microsoft Developer... and so can you.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
