@@ -15,7 +15,7 @@ const siteMetadata = {
   youtube: 'https://youtube.com',
   linkedin: 'https://www.linkedin.com/in/jasonderamo',
   bluesky: 'https://bsky.app/',
-  discord: 'https://discord.com/,
+  discord: 'https://discord.com/',
   locale: 'en-US',
   // set to true if you want a navbar fixed to the top
   stickyNav: false,
