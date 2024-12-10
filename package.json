@@ -74,8 +74,5 @@
       "prettier --write"
     ]
   },
-  "engines": {
-    "node": ">=18.0.0"
-  },
   "packageManager": "yarn@3.6.1"
 }
