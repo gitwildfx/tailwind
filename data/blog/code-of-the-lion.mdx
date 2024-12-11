@@ -149,12 +149,13 @@ cave_exits = {
   "West": "a narrow passage leading deeper into the cave"
 }
 
-user_choice = input("Leo stands at a crossroads in the cave. Which direction will he go? (North, East, South, West) ").upper()
+user_choice = input("Leo stands at a crossroads in the cave. Which direction will he go? (North, East, South, West) ").capitalize()
 
 if user_choice in cave_exits:
-  print("The exit to the", user_choice, "looks", cave_exits[user_choice])
+  print(f"The exit to the {user_choice} looks {cave_exits[user_choice]}.")
 else:
   print("That direction seems like a dead end. Better choose another path!")
+
 
 ```
 
