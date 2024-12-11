@@ -7,15 +7,13 @@ interface Project {
 
 const projectsData: Project[] = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+    title: 'Code of the Lion (Challenge)',
+    description: `Learn basic Python skills by helping a lost lion cub, Leo, find his way back home. <i>Code of the Lion</i> employs an innovative teaching format designed to develop coding skills through iterative-based challenges.`,
+    imgSrc: '/static/images/cotl.png',
+    href: '/blog/code-of-the-lion',
   },
   {
-    title: 'The Time Machine',
+    title: 'W001: Introduction to Modern Computing',
     description: `Imagine being able to travel back in time or to the future. Simple turn the knob
     to the desired date and press "Go". No more worrying about lost keys or
     forgotten headphones with this simple yet affordable solution.`,
