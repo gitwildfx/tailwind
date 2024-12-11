@@ -14,11 +14,9 @@ const projectsData: Project[] = [
   },
   {
     title: 'W001: Introduction to Modern Computing',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten headphones with this simple yet affordable solution.`,
-    imgSrc: '/static/images/time-machine.jpg',
-    href: '/blog/the-time-machine',
+    description: `Ever wanted to learn about code but found it too difficult? This 8-week course will take you through the fundamentals of coding languages, like Python, JavaScript, and CSS to help you get coding fast.`,
+    imgSrc: '/static/images/code.jpg',
+    href: '/blog/launching-a-dream-startup',
   },
 ]
 
