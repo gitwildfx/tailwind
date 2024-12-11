@@ -8,7 +8,7 @@ interface Project {
 const projectsData: Project[] = [
   {
     title: 'Code of the Lion (Challenge)',
-    description: `Learn basic Python skills by helping a lost lion cub, Leo, find his way back home. <em>Code of the Lion</em> employs an innovative teaching format designed to develop coding skills through iterative-based challenges.`,
+    description: `Learn basic Python skills by helping a lost lion cub, Leo, find his way back home. Code of the Lion employs an innovative teaching format designed to develop coding skills through iterative-based challenges.`,
     imgSrc: '/static/images/cotl.png',
     href: '/blog/code-of-the-lion',
   },
