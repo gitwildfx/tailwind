@@ -1,0 +1,160 @@
+---
+title: Launching a Dream Startup
+date: '2024-12-10'
+tags: ['innovate', 'code', 'breakthrough']
+draft: false
+summary: How an accident turned into a dream job with limitless potential. 
+---
+
+![COTL](/static/images/cotl.png)
+
+# Launch Code Editor (IDE)
+
+[![Launch editor](https://vercel.com/button)](https://www.online-python.com/)
+
+# Code of the Lion: A Python Adventure Game
+Help Leo, a brave lion cub, navigate the jungle and find his way back to his pride! Use your Python skills to guide him through challenges and reunite him with his family.
+
+## Lab 1: Welcome to the Jungle!
+**Learn**: Print statements, Variables  
+**Goal**: Print a welcome message with Leo's name and age (e.g., "Hello! I'm Leo, a 2-year-old lion cub").
+
+```python
+leo_name = "Leo"
+leo_age = 2
+print(f"Hello! I'm {leo_name}, a {leo_age}-year-old lion cub.")
+```
+
+## Lab 2: River Crossing  
+**Learn**: Input function, Conditional statements (if/else)  
+**Goal**: Help Leo decide how to cross the river.
+
+```python
+has_bridge = input("Is there a bridge? (True/False): ").strip().lower() == 'true'
+if has_bridge:
+    print("Leo crosses the river safely.")
+else:
+    print("No bridge! Help Leo find a log.")
+
+## Lab 3: Log Rolling  
+**Learn**: Loops (for)  
+**Goal**: Loop through 5 logs and check if one is suitable.
+
+```python
+logs = [2, 4, 1, 3, 5]  # Length of the logs in meters
+suitable_log = None
+for log in logs:
+    if log > 3:
+        suitable_log = log
+        print(f"Leo can use the {log}-meter long log.")
+        break
+
+if suitable_log is None:
+    print("No suitable log found!")
+```
+
+## Lab 4: Monkey Mayhem!  
+**Learn**: Functions  
+**Goal**: Create a function to reduce the banana count.
+
+```python
+bananas = 5
+
+def monkey_steal(banana_count):
+    return banana_count - 2
+
+bananas = monkey_steal(bananas)
+print(f"Leo now has {bananas} bananas.")
+```
+
+## Lab 5: Helpful Toucan  
+**Learn**: Lists, String manipulation  
+**Goal**: Print each direction with an arrow.
+
+```python
+directions = ["North", "East", "South"]
+for direction in directions:
+    print(f"{direction} ->")
+```
+
+## Lab 6: Memory Test  
+**Learn**: While loops  
+**Goal**: Help Leo remember the toucan's directions.
+
+```python
+correct_direction = "North"
+user_direction = ""
+while user_direction != correct_direction:
+    user_direction = input("Which direction did the toucan say? ").strip()
+    if user_direction == correct_direction:
+        print("Correct!")
+    else:
+        print("Try again.")
+```
+
+## Lab 7: Fruit Feast  
+**Learn**: Random numbers  
+**Goal**: Random fruit from a tree.
+
+```python
+import random
+
+fruit_type = random.randint(1, 3)
+if fruit_type == 1:
+    fruit = "mango"
+elif fruit_type == 2:
+    fruit = "banana"
+else:
+    fruit = "berries"
+print(f"Leo found a {fruit} on the tree.")
+```
+
+## Lab 8: River Rescue  
+**Learn**: String formatting (f-strings), lists, conditionals (if/else)  
+**Goal**: Help Leo rescue baby monkeys.
+
+```python
+baby_monkeys = ["Monkey 1", "Monkey 2", "Monkey 3"]
+print("Choose which monkey to save first:")
+for i, monkey in enumerate(baby_monkeys, 1):
+    print(f"{i}. {monkey}")
+choice = int(input("Enter the number of the monkey to save: "))
+if 1 <= choice <= len(baby_monkeys):
+    print(f"Leo saved {baby_monkeys[choice - 1]}.")
+else:
+    print("Invalid choice!")
+```
+
+## Lab 9: Cave Challenge  
+**Learn**: Dictionaries  
+**Goal**: Create a dictionary for cave exits.
+
+```python
+exits = {
+    "North": "dark and scary",
+    "East": "bright and sunny",
+    "South": "narrow and damp",
+    "West": "cold and windy"
+}
+print("Cave Exits:")
+for direction, description in exits.items():
+    print(f"{direction}: {description}")
+```
+
+## Lab 10 (Bonus): The Wise Old Elephant  
+**Learn**: Data Structures (Lists, Tuples)  
+**Goal**: Solve riddles with Lists and Tuples.
+
+```python
+riddles = [("What has keys but can't open locks?", "Piano"),
+           ("What has feet but can't walk?", "Table"),
+           ("What has a face but can't smile?", "Clock")]
+print("Riddles from the Wise Old Elephant:")
+for riddle, answer in riddles:
+    print(f"Riddle: {riddle}")
+    user_answer = input("Your answer: ").strip()
+    if user_answer.lower() == answer.lower():
+        print("Correct!")
+    else:
+        print(f"Wrong! The correct answer is: {answer}")
+```
