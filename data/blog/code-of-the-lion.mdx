@@ -73,7 +73,7 @@ print(f"Leo now has {bananas} bananas.")
 **Goal**: Print each direction with an arrow.
 
 ```python
-directions = ["North", "East", "South"]
+directions = ["North", "East", "South", "West"]
 for direction in directions:
     print(f"{direction} ->")
 ```
@@ -100,14 +100,14 @@ while user_direction != correct_direction:
 ```python
 import random
 
-fruit_type = random.randint(1, 3)
-if fruit_type == 1:
-    fruit = "mango"
-elif fruit_type == 2:
-    fruit = "banana"
+fruit = random.randint(1, 3)
+
+if fruit == 1:
+  print("Leo found a delicious mango!")
+elif fruit == 2:
+  print("Yum! Leo found a banana.")
 else:
-    fruit = "berries"
-print(f"Leo found a {fruit} on the tree.")
+  print("Leo enjoys a handful of sweet berries.")
 ```
 
 ## Lab 8: River Rescue  
@@ -115,15 +115,26 @@ print(f"Leo found a {fruit} on the tree.")
 **Goal**: Help Leo rescue baby monkeys.
 
 ```python
-baby_monkeys = ["Monkey 1", "Monkey 2", "Monkey 3"]
-print("Choose which monkey to save first:")
-for i, monkey in enumerate(baby_monkeys, 1):
-    print(f"{i}. {monkey}")
-choice = int(input("Enter the number of the monkey to save: "))
-if 1 <= choice <= len(baby_monkeys):
-    print(f"Leo saved {baby_monkeys[choice - 1]}.")
-else:
-    print("Invalid choice!")
+monkey_names = ["Lulu", "Milo"]
+
+print("Oh no! Monkeys, Lulu and Milo, are stranded on opposite sides of the river!")
+
+# Let the user choose who to rescue first
+while True:
+  choice = input("Who will Leo save first? (1. Lulu or 2. Milo) ").upper()
+
+  if choice in ("1", "LUULU"):
+    rescued_monkey = "Lulu"
+    break
+  elif choice in ("2", "MILO"):
+    rescued_monkey = "Milo"
+    break
+  else:
+    print("Invalid choice. Please choose 1 or 2.")
+
+# Print rescue message with f-string
+print(f"Leo bravely swims across the river and rescues {rescued_monkey}!")
+
 ```
 
 ## Lab 9: Cave Challenge  
@@ -131,15 +142,20 @@ else:
 **Goal**: Create a dictionary for cave exits.
 
 ```python
-exits = {
-    "North": "dark and scary",
-    "East": "bright and sunny",
-    "South": "narrow and damp",
-    "West": "cold and windy"
+cave_exits = {
+  "North": "dark and scary",
+  "East": "bright and sunny",
+  "South": "full of bats (yikes!)",
+  "West": "a narrow passage leading deeper into the cave"
 }
-print("Cave Exits:")
-for direction, description in exits.items():
-    print(f"{direction}: {description}")
+
+user_choice = input("Leo stands at a crossroads in the cave. Which direction will he go? (North, East, South, West) ").upper()
+
+if user_choice in cave_exits:
+  print("The exit to the", user_choice, "looks", cave_exits[user_choice])
+else:
+  print("That direction seems like a dead end. Better choose another path!")
+
 ```
 
 ## Lab 10 (Bonus): The Wise Old Elephant  
@@ -147,15 +163,24 @@ for direction, description in exits.items():
 **Goal**: Solve riddles with Lists and Tuples.
 
 ```python
-riddles = [("What has keys but can't open locks?", "Piano"),
-           ("What has feet but can't walk?", "Table"),
-           ("What has a face but can't smile?", "Clock")]
-print("Riddles from the Wise Old Elephant:")
-for riddle, answer in riddles:
-    print(f"Riddle: {riddle}")
-    user_answer = input("Your answer: ").strip()
-    if user_answer.lower() == answer.lower():
-        print("Correct!")
-    else:
-        print(f"Wrong! The correct answer is: {answer}")
+monkey_names = ["Lulu", "Milo"]
+
+print("Oh no! Monkeys, Lulu and Milo, are stranded on opposite sides of the river!")
+
+# Let the user choose who to rescue first
+while True:
+  choice = input("Who will Leo save first? (1. Lulu or 2. Milo) ").upper()
+
+  if choice in ("1", "LUULU"):
+    rescued_monkey = "Lulu"
+    break
+  elif choice in ("2", "MILO"):
+    rescued_monkey = "Milo"
+    break
+  else:
+    print("Invalid choice. Please choose 1 or 2.")
+
+# Print rescue message with f-string
+print(f"Leo bravely swims across the river and rescues {rescued_monkey}!")
+
 ```
