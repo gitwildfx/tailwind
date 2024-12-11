@@ -164,24 +164,28 @@ else:
 **Goal**: Solve riddles with Lists and Tuples.
 
 ```python
-monkey_names = ["Lulu", "Milo"]
+# A list of riddles and their corresponding answers as tuples
+riddles_and_answers = [
+  ("I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I?", "Map"),
+  ("I am always coming, but never arrive. I am always present, but never here. What am I?", "Tomorrow")
+]
 
-print("Oh no! Monkeys, Lulu and Milo, are stranded on opposite sides of the river!")
+user_score = 0  # Track Leo's score
 
-# Let the user choose who to rescue first
-while True:
-  choice = input("Who will Leo save first? (1. Lulu or 2. Milo) ").upper()
+# Loop through riddles and present them to the user
+for riddle, answer in riddles_and_answers:
+  print(f"\nThe wise old elephant asks:")
+  print(riddle)
+  guess = input("What is your guess? ")
 
-  if choice in ("1", "LUULU"):
-    rescued_monkey = "Lulu"
-    break
-  elif choice in ("2", "MILO"):
-    rescued_monkey = "Milo"
-    break
+  if guess.lower() == answer.lower():
+    user_score += 1
+    print(f"You're right! That's {user_score} out of {len(riddles_and_answers)} riddles solved.")
   else:
-    print("Invalid choice. Please choose 1 or 2.")
+    print(f"Not quite. The answer is {answer}.")
 
-# Print rescue message with f-string
-print(f"Leo bravely swims across the river and rescues {rescued_monkey}!")
+# Share the overall lesson learned
+learned_lesson = "We all need help in our journey... 'Keep going, you're doing great!'"
 
+print(f"\nLeo ponders the lesson: {learned_lesson}.")
 ```
