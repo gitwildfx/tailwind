@@ -1,7 +1,12 @@
-function isExternal(url: string): boolean {
-  return url.startsWith('http://') || url.startsWith('https://');
-}
+// Define the Project type
+type Project = {
+  title: string;
+  description: string;
+  imgSrc: string;
+  href: string;
+};
 
+// Your data array with the Project type applied
 const projectsData: Project[] = [
   {
     title: 'Code of the Lion',
@@ -23,4 +28,4 @@ const projectsData: Project[] = [
   },
 ]
 
-export default projectsData
+export default projectsData;
