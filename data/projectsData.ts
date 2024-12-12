@@ -7,17 +7,28 @@ interface Project {
 
 const projectsData: Project[] = [
   {
-    title: 'Code of the Lion (Challenge)',
-    description: `Learn basic Python skills by helping a lost lion cub, Leo, find his way back home. Code of the Lion is an open-source training guide that develops your basic coding skills through iterative-based challenges.`,
-    imgSrc: '/static/images/cotl.png',
-    href: '/blog/code-of-the-lion',
-  },
-  {
-    title: 'W001: Introduction to Modern Computing',
-    description: `Ever wanted to learn about code but found it too difficult? This 8-week course will take you through the fundamentals of coding languages, like Python, JavaScript, and CSS to help you get coding fast.`,
+    title: '"My Son Rising" (Audiobook)',
+    description: `A message of hope and redemption for wandering souls desperate to know true freedom. Reclaim your rightful purpose as spiritual sons, and discover timeless wisdom and healing found within these letters.`,
     imgSrc: '/static/images/code.jpg',
-    href: '#',
+    href: 'https://www.prodigalhouse.net/msr', // external URL
   },
 ]
 
-export default projectsData
+const ProjectComponent = () => (
+  <div>
+    {projectsData.map((project) => (
+      <div key={project.title}>
+        <h2>{project.title}</h2>
+        <p>{project.description}</p>
+        {project.imgSrc && <img src={project.imgSrc} alt={project.title} />}
+        {project.href && (
+          <a href={project.href} target="_blank" rel="noopener noreferrer">
+            Visit Project
+          </a>
+        )}
+      </div>
+    ))}
+  </div>
+)
+
+export default ProjectComponent
