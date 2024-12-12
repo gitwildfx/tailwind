@@ -7,7 +7,7 @@ type Course = {
 };
 
 // Your data array with the Course type applied
-const CoursesData: Course[] = [
+const coursesData: Course[] = [
   {
     title: 'W001: Introduction to Modern Computing - Spring 2025',
     description: `Ever wanted to learn about code but found it too difficult? This 8-week course will take you through the fundamentals of coding languages, like Python, JavaScript, and CSS to help you get coding fast.`,
@@ -16,4 +16,4 @@ const CoursesData: Course[] = [
   },
 ]
 
-export default CoursesData;
+export default coursesData;
