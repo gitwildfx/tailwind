@@ -16,4 +16,4 @@ const CoursesData: Course[] = [
   },
 ]
 
-export default coursesData;
+export default CoursesData;
