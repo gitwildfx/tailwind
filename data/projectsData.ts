@@ -17,7 +17,6 @@ const projectsData: Project[] = [
     description: `Ever wanted to learn about code but found it too difficult? This 8-week course will take you through the fundamentals of coding languages, like Python, JavaScript, and CSS to help you get coding fast.`,
     imgSrc: '/static/images/code.jpg',
     href: '#',
-    onClick: (e) => e.preventDefault(),
   },
 ]
 
