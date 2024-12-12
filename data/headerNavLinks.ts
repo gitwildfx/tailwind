@@ -1,8 +1,8 @@
 const headerNavLinks = [
   { href: '/', title: 'Home' },
   { href: '/blog', title: 'Blog' },
-  { href: '/tags', title: 'Tags' },
   { href: '/projects', title: 'Projects' },
+  { href: 'https://www.bonfire.com/store/wildfx/', title: 'Store' },
   { href: '/about', title: 'About' },
 ]
 
