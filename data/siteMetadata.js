@@ -3,10 +3,10 @@ const siteMetadata = {
   title: 'WildFx.io',
   author: 'Jason Deramo',
   headerTitle: 'WildFx.io',
-  description: 'How I became a Microsoft Developer, and so can you' + '.',
+  description: 'How I became a Code Developer, and so can you' + '.',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-eight-wine.vercel.app',
+  siteUrl: 'Your coding journey awaits.',
   siteRepo: 'https://github.com/wildfxcode/tailwind',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
