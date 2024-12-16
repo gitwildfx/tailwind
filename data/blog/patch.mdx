@@ -1,0 +1,56 @@
+---
+title: Power Fx Functions in Microsoft
+date: '2024-05-01'
+tags: ['Power Fx', 'code', 'learning', 'data']
+draft: false
+summary: "Exploring the usefulness of Power Fx functions like Patch and Collect in Microsoft applications."
+---
+
+<div style={{ textAlign: 'center' }}>
+  <img src="/static/images/code_var.png" alt="ide" />
+  <p>PowerFx Blog©</p>
+</div>
+
+### Power Fx: A Game Changer for App Development
+
+I know at some point we’ll be discussing Python, SQL, and other technologies but I can’t help but mention Microsoft’s latest code offerings. Principally, the _**Power Fx**_ formula language.
+
+> “Microsoft Power Fx is a low-code general purpose programming language based on spreadsheet-like formulas. It is a strongly typed, declarative, and functional language, with imperative logic and state management available as needed.” [1]
+
+Similar to Excel, Power Fx handles code recalculation automatically as values change. One popular command within the language is the **[Patch](https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-patch)** function (\*See the following tutorial on how it works):
+
+This feature is useful for storing and modifying data within your apps, without leaving your current screen. It’s similar to how hash tables work in Python, and other coding languages, in that you’re storing records within new or existing data tables to be called upon at a later time (\*See sample code below):
+
+```powerfx
+Patch(
+  source,
+  Defaults(source),
+  record
+)
+```
+
+### **Bonus** (Collect)
+
+Similar to Patch, the **[Collect](https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-clear-collect-clearcollect#collect)** function also creates and appends records to a data source. When used with a collection, additional columns will be created as needed. Collections are sometimes used to hold global variables or make a temporary copy of a data source.
+
+```powerfx
+Collect(
+    ProductList,
+    {
+        Product: ProductName.Text,
+        Color: Colors.Selected.Value
+    }
+)
+```
+
+Like all things Microsoft, there’s more than one way to skin a cat. However, it’s useful to know these functions often build on each other, so make sure you’re reviewing the proper syntax and understand their limitations before using.
+
+Sources:
+
+*   [1] [https://pnp.github.io/powerplatform-samples/samples/powerfx/](https://pnp.github.io/powerplatform-samples/samples/powerfx/)
+*   [https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-patch](https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-patch)
+*   [https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-clear-collect-clearcollect](https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-clear-collect-clearcollect)
+
+---
+
+**Thanks for reading WildFx! Subscribe for free to receive new posts and support my work.**
