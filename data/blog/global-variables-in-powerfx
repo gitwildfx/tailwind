@@ -1,0 +1,38 @@
+---
+title: Global Variables in PowerFx
+date: '2024-04-17'
+tags: ['PowerFx', 'code', 'global variables', 'learn']
+draft: false
+summary: "Understanding how to use Global Variables in PowerFx applications."
+---
+
+<div style={{ textAlign: 'center' }}>
+  <img src="/static/images/code_var.png" alt="ide" />
+  <p>PowerFx Blog</p>
+</div>
+
+### Global Variables: A Game Changer
+
+[![Launch editor](https://vercel.com/button)](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/working-with-variables#use-a-global-variable)
+
+### Introduction
+
+My first post for the blog is to start with a really neat PowerFx function that is a game changer. _[Global variables](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/working-with-variables#use-a-global-variable)_ enable you to temporarily hold a piece of information and reuse it for other parts of your app. Unlike _context variables_, which are scoped to a single screen, global variables are available throughout your app on all screens. These are the simplest kind of variables for most situations.
+
+### Setting Global Variables
+
+Use the **Set** function to set the value of a global variable, which temporarily holds a piece of information, such as the number of times the user has selected a button or the result of a data operation.
+
+```powerfx
+Set(varGlobal, "Hello World!")
+```
+
+Global variables are implicitly created by using the **Set** function. No explicit declaration is required. If you remove all the **Set** functions for a global variable, that global variable will cease to exist. To clear a variable, set its value to the result of the **Blank** function.
+
+> _“Because global variables are always loaded, they increase the flexibility of your applications.”_  
+> — Shane Young, PowerApps911.com
+
+### Resources
+
+- [https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-set](https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-set)
+- [https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/working-with-variables#use-a-global-variable](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/working-with-variables#use-a-global-variable)
