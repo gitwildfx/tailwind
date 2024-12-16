@@ -6,7 +6,7 @@ const siteMetadata = {
   description: 'How I became a Code Developer, and so can you' + '.',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'Your coding journey awaits' + '.',
+  siteUrl: 'https://wildfx.io/',
   siteRepo: 'https://github.com/wildfxcode/tailwind',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
