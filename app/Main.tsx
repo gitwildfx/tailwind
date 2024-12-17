@@ -22,7 +22,7 @@ export default function Home({ posts }) {
 
         {/* Newsletter Form */}
         <div className="w-full max-w-sm sm:w-[400px] md:w-[450px]">
-          <NewsletterForm title="Stay updated with the latest posts" />
+          <NewsletterForm title="Subscribe to the newsletter" />
         </div>
       </div>
 
