@@ -9,22 +9,22 @@ const MAX_DISPLAY = 5
 export default function Home({ posts }) {
   return (
     <>
-      <div className="my-6 flex flex-col items-center gap-x-12 xl:mb-12 xl:flex-row">
-        {/* Title and Description */}
-        <div className="flex-1 pt-6">
-          <h1 className="pb-6 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-7xl md:leading-14 lg:text-8xl lg:leading-14">
-            &lt;/Learn_Code&gt;
-          </h1>
-          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            {siteMetadata.description}
-          </p>
-        </div>
+<div className="my-4 flex flex-col items-center gap-x-12 xl:mb-12 xl:flex-row">
+  {/* Title and Description */}
+  <div className="flex-1 pt-4">
+    <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+      &lt;/Learn_Code&gt;
+    </h1>
+    <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+      {siteMetadata.description}
+    </p>
+  </div>
 
-        {/* Newsletter Form */}
-        <div className="mx-2 my-12 flex w-[300px] items-center justify-center sm:w-[400px] md:w-[550px]">
-          <NewsletterForm title="Subscribe to the newsletter" />
-        </div>
-      </div>
+  {/* Newsletter Form */}
+  <div className="mx-2 my-12 flex w-[300px] items-center justify-center sm:w-[400px] md:w-[550px]">
+    <NewsletterForm title="Subscribe to the newsletter" />
+  </div>
+</div>
 
       {/* Latest Posts */}
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
