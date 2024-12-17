@@ -14,7 +14,7 @@ export default function Home({ posts }) {
         <div className="flex-1 pt-6">
           <h1 className="pb-6 text-4xl font-extrabold leading-10 tracking-tight text-gray-900 dark:text-gray-100 sm:text-5xl sm:leading-12 md:text-7xl md:leading-14">
             &lt;/Learn_Code&gt;
-            </h1>
+          </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
             {siteMetadata.description}
           </p>
