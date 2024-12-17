@@ -21,7 +21,7 @@ export default function Home({ posts }) {
         </div>
 
         {/* Newsletter Form */}
-        <div className="mx-2 my-12 flex w-[300px] items-center justify-center sm:w-[400px] md:w-[550px]">]">
+        <div className="mx-2 my-12 flex w-[300px] items-center justify-center sm:w-[400px] md:w-[550px]">
           <NewsletterForm title="Subscribe to the newsletter" />
         </div>
       </div>
