@@ -17,16 +17,16 @@ export default function Home({ posts }) {
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             &lt;/Learn_Code&gt;
           </h1>
-          <p className="mt-4 text-lg leading-7 text-gray-500 dark:text-gray-400">
+          <p className="mt-4 mb-6 text-lg leading-7 text-gray-500 dark:text-gray-400">
             {siteMetadata.description}
           </p>
           <h2 className="center text-lg text-gray-600 dark:text-gray-400">
-            {`If you're curious about learning code, or want to grow in the tech space, follow the journey. `}
+            {`If you're interested in a coding career, or want to grow in the tech space, check out our available courses or try the Code Challenge. `}
             <a
               href="https://wildfx.io/blog/launching-a-dream-startup"
               className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
             >
-              Learn
+              Discover
             </a>
             {` how we're changing the way people learn and interact with code for the modern age.`}
           </h2>
