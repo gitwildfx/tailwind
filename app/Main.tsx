@@ -10,8 +10,8 @@ export default function Home({ posts }) {
   return (
     <>
       {/* Title and Description */}
-      <div className="my-2 flex flex-col items-center gap-x-12 xl:mb-6 xl:flex-row"> {/* Reduced margin */}
-        <div className="flex-1 pt-2"> {/* Reduced padding top */}
+      <div className="my-3 flex flex-col items-center gap-x-12 xl:mb-9 xl:flex-row"> {/* In-between margin */}
+        <div className="flex-1 pt-3"> {/* In-between padding top */}
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             &lt;/Learn_Code&gt;
           </h1>
