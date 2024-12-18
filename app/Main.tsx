@@ -21,14 +21,21 @@ export default function Home({ posts }) {
             {siteMetadata.description}
           </p>
           <h2 className="center text-lg text-gray-600 dark:text-gray-400">
-            {`If you're interested in a coding career, or want to grow in the tech space, check out our available courses or try the Code Challenge. `}
+            {`If you're interested in a coding career, or want to grow in the tech space, check out our available `}
             <a
-              href="https://wildfx.io/blog/launching-a-dream-startup"
+              href="https://wildfx.io/courses"
               className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-            >
-              Discover
+              >
+              courses
             </a>
-            {` how we're changing the way people learn and interact with code for the modern age.`}
+            {` or try the free `}
+            <a
+              href="https://wildfx.io/blog/code-of-the-lion"
+              className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+              >
+              Code Challenge
+            </a>
+            {`. Learn how we're changing the way people learn and interact with code for the modern age.`}
           </h2>
         </div>
 
