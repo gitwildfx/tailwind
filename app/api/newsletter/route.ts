@@ -5,8 +5,7 @@ import { NextResponse } from 'next/server';
 export const dynamic = 'force-static';
 
 const handler = NewsletterAPI({
-  // @ts-ignore
-  provider: siteMetadata?.newsletter?.provider,  // Safely accessing provider with optional chaining
+  provider: siteMetadata?.newsletter?.provider, // Safely accessing provider with optional chaining
 });
 
 // Custom POST logic for Buttondown
