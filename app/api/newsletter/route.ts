@@ -4,9 +4,9 @@ import { NextResponse } from 'next/server'
 
 export const dynamic = 'force-static'
 
-// Safely access provider with fallback to "buttondown"
+// Safely access provider with fallback to 'buttondown'
 const handler = NewsletterAPI({
-  provider: siteMetadata?.newsletter?.provider || "buttondown", // Default to "buttondown" if provider is not available
+  provider: siteMetadata?.newsletter?.provider || 'buttondown', // Corrected to use single quotes
 })
 
 // Custom POST logic for Buttondown
