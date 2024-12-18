@@ -25,14 +25,14 @@ export default function Home({ posts }) {
             <a
               href="https://wildfx.io/courses"
               className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-              >
+            >
               courses
             </a>
             {` or try the free `}
             <a
               href="https://wildfx.io/blog/code-of-the-lion"
               className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-              >
+            >
               Code Challenge
             </a>
             {`. Learn how we're changing the way people learn and interact with code for the modern age.`}
