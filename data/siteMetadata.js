@@ -3,7 +3,7 @@ const siteMetadata = {
   title: 'WildFx.io',
   author: 'Jason Deramo',
   headerTitle: 'WildFx.io',
-  description: 'How I became a Developer, and you can too' + '.',
+  //description: 'How I became a Developer, and you can too' + '.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://wildfx.io/',
