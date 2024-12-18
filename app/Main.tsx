@@ -20,8 +20,8 @@ export default function Home({ posts }) {
           <p className="mt-4 text-lg leading-7 text-gray-500 dark:text-gray-400">
             {siteMetadata.description}
           </p>
-          <h2 className="center text-lg text-gray-600 dark:text-gray-400">
-            {`How I became a Developer, and you can too! If you're curious about learning code, or want to grow in the tech space, follow the journey. `}
+          <h2 className="center text-lg text-gray-600 dark:text-gray-400 mt-6">
+            {`If you're curious to learn code, or want to grow in the tech space, sign up to discover how. Learn more about my journey here. `}
             <a
               href="https://wildfx.io/blog/launching-a-dream-startup"
               className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
