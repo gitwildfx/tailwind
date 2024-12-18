@@ -33,9 +33,9 @@ export default function Home({ posts }) {
               href="https://wildfx.io/blog/code-of-the-lion"
               className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
             >
-              Code Challenge
+              Coding Challenge
             </a>
-            {`. Learn how we're changing the way people learn and interact with code for the modern age.`}
+            {`. Discover how we're changing the way people learn and interact with code for the modern age.`}
           </h2>
         </div>
 
