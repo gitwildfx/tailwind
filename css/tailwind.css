@@ -1,14 +1,7 @@
-/* tailwind.css */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.site-logo {
-  @apply w-7/10 h-auto; /* Set width to 70% */
-}
-
-/* Other styles */
 .task-list-item::before {
   @apply hidden;
 }
@@ -38,7 +31,7 @@
   scrollbar-width: none; /* Firefox */
 }
 
-/* Autofill input styling */
+/* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
   transition:
