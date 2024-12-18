@@ -16,7 +16,7 @@ export default function Home({ posts }) {
           <h1 className="pb-6 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             &lt;/Learn_Code&gt;
           </h1>
-          <h2 className="prose text-lg text-gray-600 dark:text-gray-400 center text-lg">
+          <h2 className="prose text-lg text-gray-600 dark:text-gray-400 text-center">
             {`How I became a Developer, and you can too! If you're curious about learning code, or want to grow in the tech space, follow the journey. `}
             <a
               href="https://wildfx.io/blog/launching-a-dream-startup"
@@ -43,8 +43,7 @@ export default function Home({ posts }) {
         </div>
 
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
-          {!posts.length && 'No posts found.'}
-          {posts.slice(0, MAX_DISPLAY).map((post) => {
+          {!posts.length ? 'No posts found.' : posts.slice(0, MAX_DISPLAY).map((post) => {
             const { slug, date, title, summary, tags } = post
             return (
               <li key={slug} className="py-12">
