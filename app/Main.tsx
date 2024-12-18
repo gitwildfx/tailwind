@@ -10,19 +10,25 @@ export default function Home({ posts }) {
   return (
     <>
       {/* Title and Description */}
-      <div className="my-3 flex flex-col items-center gap-x-12 xl:mb-9 xl:flex-row">
-        {/* In-between margin */}
-        <div className="flex-1 pt-3">
-          {/* In-between padding top */}
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+      <div className="my-6 flex flex-col items-center justify-center gap-x-12 xl:mb-12 xl:flex-row">
+        {/* Title Section */}
+        <div className="mr-8 pt-6">
+          <h1 className="pb-6 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 text-center">
             &lt;/Learn_Code&gt;
           </h1>
-          <p className="mt-4 text-lg leading-7 text-gray-500 dark:text-gray-400">
-            {siteMetadata.description}
-          </p>
+          <h2 className="prose text-lg text-gray-600 dark:text-gray-400 text-center">
+            {`How I became a Developer, and you can too! If you're curious about learning code, or want to grow in the tech space, follow the journey. `}
+            <a
+              href="https://wildfx.io/blog/launching-a-dream-startup"
+              className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+            >
+              Learn
+            </a>
+            {` how we're changing the way people learn and interact with code for the modern age.`}
+          </h2>
         </div>
 
-        {/* Newsletter Form */}
+        {/* Newsletter Form Section */}
         <div className="mx-2 my-12 flex w-[300px] items-center justify-center sm:w-[400px] md:w-[550px]">
           <NewsletterForm title="Subscribe to the newsletter" />
         </div>
