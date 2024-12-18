@@ -20,6 +20,16 @@ export default function Home({ posts }) {
           <p className="mt-4 text-lg leading-7 text-gray-500 dark:text-gray-400">
             {siteMetadata.description}
           </p>
+          <h2 className="prose text-lg text-gray-600 dark:text-gray-400 text-center">
+            {`How I became a Developer, and you can too! If you're curious about learning code, or want to grow in the tech space, follow the journey. `}
+            <a
+              href="https://wildfx.io/blog/launching-a-dream-startup"
+              className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+            >
+              Learn
+            </a>
+            {` how we're changing the way people learn and interact with code for the modern age.`}
+          </h2>
         </div>
 
         {/* Newsletter Form */}
