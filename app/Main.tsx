@@ -17,8 +17,11 @@ export default function Home({ posts }) {
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             &lt;/Learn_Code&gt;
           </h1>
-          <h2 className="center text-lg text-gray-600 dark:text-gray-400 mt-6">
-            {`If you're curious to learn code, or want to grow in the tech space, sign up to discover how. Learn more about my journey here. `}
+          <p className="mt-4 text-lg leading-7 text-gray-500 dark:text-gray-400">
+            {siteMetadata.description}
+          </p>
+          <h2 className="center text-lg text-gray-600 dark:text-gray-400">
+            {`If you're curious about learning code, or want to grow in the tech space, follow the journey. `}
             <a
               href="https://wildfx.io/blog/launching-a-dream-startup"
               className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
