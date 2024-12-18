@@ -13,7 +13,7 @@ export default function Home({ posts }) {
       <div className="my-6 flex flex-col items-center justify-center gap-x-12 xl:mb-12 xl:flex-row">
         {/* Title Section */}
         <div className="mr-8 pt-6">
-          <h1 className="pb-6 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 text-center">
+          <h1 className="pb-6 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             &lt;/Learn_Code&gt;
           </h1>
           <h2 className="prose text-lg text-gray-600 dark:text-gray-400 text-center">
