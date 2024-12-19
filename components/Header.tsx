@@ -11,8 +11,8 @@ import SearchButton from './SearchButton'
 
 const Header = () => {
   // Memoize rotatingHeader to avoid unnecessary recalculation
-  const rotatingHeader = useMemo(() => siteMetadata.headerTitle || [], [siteMetadata.headerTitle])
-  
+  const rotatingHeader = useMemo(() => siteMetadata.headerTitle || [], [])
+
   const [currentText, setCurrentText] = useState('')
   const [wordIndex, setWordIndex] = useState(0)
   const [charIndex, setCharIndex] = useState(0)
