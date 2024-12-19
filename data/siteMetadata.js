@@ -3,7 +3,7 @@ const siteMetadata = {
   title: 'WildFx.io',
   author: 'Jason Deramo',
   headerTitle: 'WildFx.io',
-  description: 'How I became a Developer, and so can you',
+  description: 'How I became a Developer, and so can you' + '!',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://wildfx.io/',
@@ -15,7 +15,7 @@ const siteMetadata = {
   youtube: 'https://youtube.com/@wild-fx',
   linkedin: 'https://www.linkedin.com/in/jasonderamo',
   bluesky: 'https://bsky.app',
-  discord: 'https://discord.gg/PXgCYNyqwn',
+  discord: 'https://discord.gg/f8fk4uCH',
   locale: 'en-US',
   stickyNav: false,
   analytics: {
@@ -50,4 +50,4 @@ const siteMetadata = {
   },
 };
 
-module.exports = siteMetadata
+module.exports = siteMetadata;
