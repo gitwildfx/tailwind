@@ -21,7 +21,7 @@ export default function Home({ posts }) {
             {siteMetadata.description}
           </p>
           <h2 className="center text-lg text-gray-600 dark:text-gray-400">
-            {`Interested in a career transition or new experience? Check out our available `}
+            {`Interested in a new career transition? Check out our available `}
             <a
               href="https://wildfx.io/courses"
               className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
