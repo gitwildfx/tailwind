@@ -1,6 +1,3 @@
-'use client'
-
-import { useEffect, useState, useMemo } from 'react'
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
 import Logo from '@/data/logo.svg'
@@ -10,38 +7,6 @@ import ThemeSwitch from './ThemeSwitch'
 import SearchButton from './SearchButton'
 
 const Header = () => {
-  // Memoize rotatingBlogTitle to avoid unnecessary recalculation
-  const rotatingBlogTitle = useMemo(() => siteMetadata.blogTitle.split(' ') || [], [])
-
-  const [currentText, setCurrentText] = useState('')
-  const [wordIndex, setWordIndex] = useState(0)
-  const [charIndex, setCharIndex] = useState(0)
-  const [isDeleting, setIsDeleting] = useState(false)
-
-  useEffect(() => {
-    if (!rotatingBlogTitle.length) return
-
-    const typeEffect = () => {
-      const word = rotatingBlogTitle[wordIndex]
-      if (!isDeleting && charIndex <= word.length) {
-        setCurrentText(word.slice(0, charIndex + 1))
-        setCharIndex((prev) => prev + 1)
-      } else if (isDeleting && charIndex > 0) {
-        setCurrentText(word.slice(0, charIndex - 1))
-        setCharIndex((prev) => prev - 1)
-      } else if (!isDeleting && charIndex === word.length) {
-        setTimeout(() => setIsDeleting(true), 1000) // Pause before deleting
-      } else if (isDeleting && charIndex === 0) {
-        setIsDeleting(false)
-        setWordIndex((prev) => (prev + 1) % rotatingBlogTitle.length)
-      }
-    }
-
-    const typingSpeed = isDeleting ? 100 : 150
-    const timer = setTimeout(typeEffect, typingSpeed)
-    return () => clearTimeout(timer)
-  }, [rotatingBlogTitle, charIndex, isDeleting, wordIndex])
-
   let headerClass = 'flex items-center w-full bg-white dark:bg-gray-950 justify-between py-10'
   if (siteMetadata.stickyNav) {
     headerClass += ' sticky top-0 z-50'
@@ -55,7 +20,6 @@ const Header = () => {
             <Logo />
           </div>
           <div className="hidden h-6 text-2xl font-semibold sm:block">
-            {/* Static Website Header */}
             {siteMetadata.headerTitle}
           </div>
         </div>
