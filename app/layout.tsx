@@ -13,10 +13,10 @@ import siteMetadata from '@/data/siteMetadata'
 import { ThemeProviders } from './theme-providers'
 import { Metadata } from 'next'
 
-const inter = Inter({
+const inter = Space_Grotesk({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-inter',
+  variable: '--font-Space_Grotesk',
 })
 
 export const metadata: Metadata = {
@@ -65,7 +65,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang={siteMetadata.language}
-      className={`${inter.variable} scroll-smooth`}
+      className={`${Space_Grotesk.variable} scroll-smooth`}
       suppressHydrationWarning
     >
       <link
