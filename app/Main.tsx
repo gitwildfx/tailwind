@@ -21,7 +21,7 @@ export default function Home({ posts }) {
             {siteMetadata.description}
           </p>
           <h2 className="center text-lg text-gray-600 dark:text-gray-400">
-            {`If you're interested in a coding career, or want to grow in the tech space, check out our available `}
+            {`Interested in a coding career, or want to grow in the tech space? Check out our available `}
             <a
               href="https://wildfx.io/courses"
               className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
@@ -35,7 +35,7 @@ export default function Home({ posts }) {
             >
               Coding Challenge
             </a>
-            {`. Discover how we're changing the way people learn and interact with code for the modern age.`}
+            {`. Discover how we're changing the way people learn and interact with code in the modern age.`}
           </h2>
         </div>
 
