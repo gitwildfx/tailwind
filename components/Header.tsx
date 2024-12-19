@@ -1,58 +1,50 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+import siteMetadata from '@/data/siteMetadata';
+import headerNavLinks from '@/data/headerNavLinks';
+import Logo from '@/data/logo.svg';
+import Link from './Link';
+import MobileNav from './MobileNav';
+import ThemeSwitch from './ThemeSwitch';
+import SearchButton from './SearchButton';
 
-.task-list-item::before {
-  @apply hidden;
-}
+const Header = () => {
+  let headerClass =
+    'flex items-center w-full bg-white dark:bg-gray-950 justify-between py-10';
+  if (siteMetadata.stickyNav) {
+    headerClass += ' sticky top-0 z-50';
+  }
 
-.task-list-item {
-  @apply list-none;
-}
+  return (
+    <header className={headerClass}>
+      <Link href="/" aria-label={siteMetadata.headerTitle}>
+        <div className="flex items-center justify-between">
+          <div className="mr-3">
+            <Logo />
+          </div>
+          <div className="hidden h-6 text-2xl font-semibold sm:block">
+            {siteMetadata.headerTitle}
+          </div>
+        </div>
+      </Link>
+      <div className="flex items-center space-x-4 leading-5 sm:space-x-6">
+        <div className="no-scrollbar hidden max-w-40 items-center space-x-4 overflow-x-auto sm:flex sm:space-x-6 md:max-w-72 lg:max-w-96">
+          {headerNavLinks
+            .filter((link) => link.href !== '/')
+            .map((link) => (
+              <Link
+                key={link.title}
+                href={link.href}
+                className="block font-medium text-gray-900 hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-400"
+              >
+                {link.title}
+              </Link>
+            ))}
+        </div>
+        <SearchButton />
+        <ThemeSwitch />
+        <MobileNav />
+      </div>
+    </header>
+  );
+};
 
-.footnotes {
-  @apply mt-12 border-t border-gray-200 pt-8 dark:border-gray-700;
-}
-
-.data-footnote-backref {
-  @apply no-underline;
-}
-
-.csl-entry {
-  @apply my-5;
-}
-
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-
-.no-scrollbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
-/* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
-input:-webkit-autofill,
-input:-webkit-autofill:focus {
-  transition: background-color 600000s 0s, color 600000s 0s;
-}
-
-.katex-display {
-  overflow: auto hidden;
-}
-
-.content-header-link {
-  opacity: 0;
-  margin-left: -24px;
-  padding-right: 4px;
-}
-
-.content-header:hover .content-header-link,
-.content-header-link:hover {
-  opacity: 1;
-}
-
-.linkicon {
-  display: inline-block;
-  vertical-align: middle;
-}
+export default Header;
