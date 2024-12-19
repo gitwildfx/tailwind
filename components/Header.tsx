@@ -1,60 +1,57 @@
-import { useEffect, useState } from 'react';
-import siteMetadata from '@/data/siteMetadata';
-import headerNavLinks from '@/data/headerNavLinks';
-import Logo from '@/data/logo.svg';
-import Link from './Link';
-import MobileNav from './MobileNav';
-import ThemeSwitch from './ThemeSwitch';
-import SearchButton from './SearchButton';
+import { useEffect, useState } from 'react'
+import siteMetadata from '@/data/siteMetadata'
+import headerNavLinks from '@/data/headerNavLinks'
+import Logo from '@/data/logo.svg'
+import Link from './Link'
+import MobileNav from './MobileNav'
+import ThemeSwitch from './ThemeSwitch'
+import SearchButton from './SearchButton'
 
 const Header = () => {
-  const [currentWord, setCurrentWord] = useState('');
-  const [charIndex, setCharIndex] = useState(0);
-  const [wordIndex, setWordIndex] = useState(0);
-  const rotatingHeader = siteMetadata.rotatingHeader || []; // Pull words from siteMetadata
+  const rotatingHeader = siteMetadata.headerTitle || []
+  const [currentText, setCurrentText] = useState('')
+  const [wordIndex, setWordIndex] = useState(0)
+  const [charIndex, setCharIndex] = useState(0)
+  const [isDeleting, setIsDeleting] = useState(false)
 
-  // Typewriter effect logic
   useEffect(() => {
-    if (rotatingHeader.length === 0) return;
+    if (!rotatingHeader.length) return
 
-    const typeWord = () => {
-      if (charIndex < rotatingHeader[wordIndex].length) {
-        setCurrentWord((prev) => prev + rotatingHeader[wordIndex][charIndex]);
-        setCharIndex((prev) => prev + 1);
-      } else {
-        setTimeout(deleteWord, 1000); // Delay before deleting
+    const typeEffect = () => {
+      const word = rotatingHeader[wordIndex]
+      if (!isDeleting && charIndex <= word.length) {
+        setCurrentText(word.slice(0, charIndex + 1))
+        setCharIndex((prev) => prev + 1)
+      } else if (isDeleting && charIndex > 0) {
+        setCurrentText(word.slice(0, charIndex - 1))
+        setCharIndex((prev) => prev - 1)
+      } else if (!isDeleting && charIndex === word.length) {
+        setTimeout(() => setIsDeleting(true), 1000) // Pause before deleting
+      } else if (isDeleting && charIndex === 0) {
+        setIsDeleting(false)
+        setWordIndex((prev) => (prev + 1) % rotatingHeader.length)
       }
-    };
+    }
 
-    const deleteWord = () => {
-      if (charIndex > 0) {
-        setCurrentWord((prev) => prev.slice(0, -1));
-        setCharIndex((prev) => prev - 1);
-      } else {
-        setWordIndex((prev) => (prev + 1) % rotatingHeader.length); // Move to the next word
-        setTimeout(typeWord, 500); // Delay before typing the next word
-      }
-    };
+    const typingSpeed = isDeleting ? 100 : 150
+    const timer = setTimeout(typeEffect, typingSpeed)
+    return () => clearTimeout(timer)
+  }, [rotatingHeader, charIndex, isDeleting, wordIndex])
 
-    const timeout = setTimeout(typeWord, 150); // Typing speed
-    return () => clearTimeout(timeout); // Cleanup timeout
-  }, [charIndex, wordIndex, rotatingHeader]);
-
-  let headerClass = 'flex items-center w-full bg-white dark:bg-gray-950 justify-between py-10';
+  let headerClass = 'flex items-center w-full bg-white dark:bg-gray-950 justify-between py-10'
   if (siteMetadata.stickyNav) {
-    headerClass += ' sticky top-0 z-50';
+    headerClass += ' sticky top-0 z-50'
   }
 
   return (
     <header className={headerClass}>
-      <Link href="/" aria-label={siteMetadata.headerTitle}>
+      <Link href="/" aria-label={currentText}>
         <div className="flex items-center justify-between">
           <div className="mr-3">
             <Logo />
           </div>
           <div className="hidden h-6 text-2xl font-semibold sm:block">
-            {siteMetadata.headerTitle}{' '}
-            <span className="font-mono text-primary-500">{currentWord}</span>
+            {currentText}
           </div>
         </div>
       </Link>
@@ -77,7 +74,7 @@ const Header = () => {
         <MobileNav />
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
