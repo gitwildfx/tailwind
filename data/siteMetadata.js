@@ -2,7 +2,7 @@
 const siteMetadata = {
   title: 'WildFx.io',
   author: 'Jason Deramo',
-  headerTitle: 'WildFx.io',
+  headerTitle: ['</Learn_Code>', '</Write_Code>', '</Do_Code>'], // Rotating text
   description: 'How I became a Developer, and so can you.',
   language: 'en-us',
   theme: 'system', // system, dark or light
@@ -18,7 +18,6 @@ const siteMetadata = {
   discord: 'https://discord.gg/PXgCYNyqwn',
   locale: 'en-US',
   stickyNav: false,
-  rotatingHeader: ['</Learn_Code>', '</Write_Code>', '</Do_Code>'], // Add your rotating words here
   analytics: {
     umamiAnalytics: {
       umamiWebsiteId: process.env.NEXT_UMAMI_ID,
