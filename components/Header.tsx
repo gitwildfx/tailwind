@@ -1,6 +1,6 @@
-"use client";
+'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useMemo } from 'react'
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
 import Logo from '@/data/logo.svg'
@@ -10,7 +10,9 @@ import ThemeSwitch from './ThemeSwitch'
 import SearchButton from './SearchButton'
 
 const Header = () => {
-  const rotatingHeader = siteMetadata.headerTitle || []
+  // Memoize rotatingHeader to avoid unnecessary recalculation
+  const rotatingHeader = useMemo(() => siteMetadata.headerTitle || [], [siteMetadata.headerTitle])
+  
   const [currentText, setCurrentText] = useState('')
   const [wordIndex, setWordIndex] = useState(0)
   const [charIndex, setCharIndex] = useState(0)
