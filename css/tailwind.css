@@ -1,78 +1,31 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+const words = ["Welcome to WildFx.io", "Creating with Tailwind CSS", "Explore the Power of Design"];
+let wordIndex = 0;
+let charIndex = 0;
+let currentWord = "";
+const rotatingTextElement = document.getElementById("rotating-text");
 
-.task-list-item::before {
-  @apply hidden;
-}
-
-.task-list-item {
-  @apply list-none;
-}
-
-.footnotes {
-  @apply mt-12 border-t border-gray-200 pt-8 dark:border-gray-700;
-}
-
-.data-footnote-backref {
-  @apply no-underline;
-}
-
-.csl-entry {
-  @apply my-5;
-}
-
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-
-.no-scrollbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
-/* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
-input:-webkit-autofill,
-input:-webkit-autofill:focus {
-  transition:
-    background-color 600000s 0s,
-    color 600000s 0s;
-}
-
-.katex-display {
-  overflow: auto hidden;
-}
-
-.content-header-link {
-  opacity: 0;
-  margin-left: -24px;
-  padding-right: 4px;
-}
-
-.content-header:hover .content-header-link,
-.content-header-link:hover {
-  opacity: 1;
-}
-
-.linkicon {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-/* Typewriter Effect */
-@keyframes typewriter {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
+function rotateWords() {
+  if (charIndex < words[wordIndex].length) {
+    currentWord += words[wordIndex][charIndex];
+    rotatingTextElement.textContent = currentWord;
+    charIndex++;
+    setTimeout(rotateWords, 150); // Adjust typing speed
+  } else {
+    setTimeout(deleteWord, 1000); // Adjust delay before deleting
   }
 }
 
-.typewriter {
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 0;
-  animation: typewriter 2s steps(30) 1s 1 normal both; /* Adjusted to 2s duration */
+function deleteWord() {
+  if (charIndex > 0) {
+    currentWord = currentWord.slice(0, -1);
+    rotatingTextElement.textContent = currentWord;
+    charIndex--;
+    setTimeout(deleteWord, 100); // Adjust deleting speed
+  } else {
+    wordIndex = (wordIndex + 1) % words.length; // Move to next word
+    setTimeout(rotateWords, 500); // Adjust delay before typing next word
+  }
 }
+
+// Start rotating words
+rotateWords();
