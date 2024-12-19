@@ -2,7 +2,7 @@
 const siteMetadata = {
   title: 'WildFx.io',
   author: 'Jason Deramo',
-  headerTitle: ['</Learn_Code>', '</Write_Code>', '</Do_Code>'], // Rotating text
+  headerTitle: '',
   description: 'How I became a Developer, and so can you.',
   language: 'en-us',
   theme: 'system', // system, dark or light
