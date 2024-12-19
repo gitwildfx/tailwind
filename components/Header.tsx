@@ -54,9 +54,7 @@ const Header = () => {
           <div className="mr-3">
             <Logo />
           </div>
-          <div className="hidden h-6 text-2xl font-semibold sm:block">
-            {currentText}
-          </div>
+          <div className="hidden h-6 text-2xl font-semibold sm:block">{currentText}</div>
         </div>
       </Link>
       <div className="flex items-center space-x-4 leading-5 sm:space-x-6">
