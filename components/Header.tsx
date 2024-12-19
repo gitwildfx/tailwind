@@ -10,8 +10,8 @@ import ThemeSwitch from './ThemeSwitch'
 import SearchButton from './SearchButton'
 
 const Header = () => {
-  // Memoize rotatingHeader to avoid unnecessary recalculation
-  const rotatingHeader = useMemo(() => siteMetadata.headerTitle || [], [])
+  // Memoize rotatingBlogTitle to avoid unnecessary recalculation
+  const rotatingBlogTitle = useMemo(() => siteMetadata.blogTitle.split(' ') || [], [])
 
   const [currentText, setCurrentText] = useState('')
   const [wordIndex, setWordIndex] = useState(0)
@@ -19,10 +19,10 @@ const Header = () => {
   const [isDeleting, setIsDeleting] = useState(false)
 
   useEffect(() => {
-    if (!rotatingHeader.length) return
+    if (!rotatingBlogTitle.length) return
 
     const typeEffect = () => {
-      const word = rotatingHeader[wordIndex]
+      const word = rotatingBlogTitle[wordIndex]
       if (!isDeleting && charIndex <= word.length) {
         setCurrentText(word.slice(0, charIndex + 1))
         setCharIndex((prev) => prev + 1)
@@ -33,14 +33,14 @@ const Header = () => {
         setTimeout(() => setIsDeleting(true), 1000) // Pause before deleting
       } else if (isDeleting && charIndex === 0) {
         setIsDeleting(false)
-        setWordIndex((prev) => (prev + 1) % rotatingHeader.length)
+        setWordIndex((prev) => (prev + 1) % rotatingBlogTitle.length)
       }
     }
 
     const typingSpeed = isDeleting ? 100 : 150
     const timer = setTimeout(typeEffect, typingSpeed)
     return () => clearTimeout(timer)
-  }, [rotatingHeader, charIndex, isDeleting, wordIndex])
+  }, [rotatingBlogTitle, charIndex, isDeleting, wordIndex])
 
   let headerClass = 'flex items-center w-full bg-white dark:bg-gray-950 justify-between py-10'
   if (siteMetadata.stickyNav) {
@@ -49,12 +49,15 @@ const Header = () => {
 
   return (
     <header className={headerClass}>
-      <Link href="/" aria-label={currentText}>
+      <Link href="/" aria-label={siteMetadata.headerTitle}>
         <div className="flex items-center justify-between">
           <div className="mr-3">
             <Logo />
           </div>
-          <div className="hidden h-6 text-2xl font-semibold sm:block">{currentText}</div>
+          <div className="hidden h-6 text-2xl font-semibold sm:block">
+            {/* Static Website Header */}
+            {siteMetadata.headerTitle}
+          </div>
         </div>
       </Link>
       <div className="flex items-center space-x-4 leading-5 sm:space-x-6">
