@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useState } from 'react'
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
