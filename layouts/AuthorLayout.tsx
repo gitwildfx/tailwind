@@ -5,29 +5,11 @@ import Image from '@/components/Image'
 
 interface Props {
   children: ReactNode
-  content: Omit<Authors, '_id' | '_raw' | 'body'> | null // Explicitly handle null content
+  content: Omit<Authors, '_id' | '_raw' | 'body'>
 }
 
 export default function AuthorLayout({ children, content }: Props) {
-  // Early return if content is not provided
-  if (!content) {
-    return <div>Loading...</div> // Or a fallback UI
-  }
-
-  const {
-    name,
-    avatar,
-    occupation,
-    company,
-    email,
-    twitter,
-    bluesky,
-    facebook,
-    linkedin,
-    github,
-    discord,
-    medium,
-  } = content
+  const { name, avatar, occupation, company, email, twitter, bluesky, facebook, linkedin, github, medium } = content
 
   return (
     <>
@@ -39,29 +21,23 @@ export default function AuthorLayout({ children, content }: Props) {
         </div>
         <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
           <div className="flex flex-col items-center space-x-2 pt-8">
-            {avatar ? (
+            {avatar && (
               <Image
                 src={avatar}
                 alt="avatar"
-                width={288}
-                height={288}
+                width={192}
+                height={192}
                 className="h-48 w-48 rounded-full"
               />
-            ) : (
-              <div className="h-48 w-48 rounded-full bg-gray-200 dark:bg-gray-600" /> // Default avatar if none
             )}
             <h3 className="pb-2 pt-4 text-2xl font-bold leading-8 tracking-tight">{name}</h3>
             <div className="text-gray-500 dark:text-gray-400">{occupation}</div>
             <div className="text-gray-500 dark:text-gray-400">{company}</div>
             <div className="flex space-x-3 pt-6">
-              {email && <SocialIcon kind="mail" href={`mailto:${email}`} />}
-              {github && <SocialIcon kind="github" href={github} />}
-              {linkedin && <SocialIcon kind="linkedin" href={linkedin} />}
-              {twitter && <SocialIcon kind="x" href={twitter} />}
-              {bluesky && <SocialIcon kind="bluesky" href={bluesky} />}
-              {discord && <SocialIcon kind="discord" href={discord} />}
-              {facebook && <SocialIcon kind="facebook" href={facebook} />}
-              {medium && <SocialIcon kind="medium" href={medium} />}
+              <SocialIcon kind="mail" href={`mailto:${email}`} />
+              <SocialIcon kind="facebook" href={`mailto:${facebook}`} />
+              <SocialIcon kind="linkedin" href={linkedin} />
+              <SocialIcon kind="medium" href={medium} />
             </div>
           </div>
           <div className="prose max-w-none pb-8 pt-8 dark:prose-invert xl:col-span-2">
