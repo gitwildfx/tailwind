@@ -13,7 +13,9 @@ const siteMetadata = {
   email: 'ask@wildfx.io',
   github: 'https://github.com/wildfxcode',
   youtube: 'https://youtube.com/@wild-fx',
+  linkedin: 'https://www.linkedin.com/in/jasonderamo',
   discord: 'https://discord.gg/f8fk4uCH',
+  medium: 'https://medium.com/@jasonderamo',
   locale: 'en-US',
   stickyNav: false,
   analytics: {
