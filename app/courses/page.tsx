@@ -13,7 +13,7 @@ export default function Courses() {
             Courses
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            Explore our current course offerings and learning resources:
+            Explore course offerings and learning resources:
           </p>
         </div>
         <div className="container py-12">
