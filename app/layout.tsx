@@ -1,7 +1,8 @@
 import 'css/tailwind.css'
 import 'pliny/search/algolia.css'
 import 'remark-github-blockquote-alert/alert.css'
-
+import { GeistSans } from 'geist/font/sans'
+import { GeistMono } from 'geist/font/mono'
 import { Space_Grotesk } from 'next/font/google'
 import { Analytics } from '@vercel/analytics'
 import { SearchProvider, SearchConfig } from 'pliny/search'
