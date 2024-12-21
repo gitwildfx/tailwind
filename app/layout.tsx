@@ -2,7 +2,7 @@ import 'css/tailwind.css'
 import 'pliny/search/algolia.css'
 import 'remark-github-blockquote-alert/alert.css'
 
-import { geist } from 'next/font/google'
+import { geist as geistFont } from 'next/font/google'  // Renaming to avoid conflict
 import { Analytics, AnalyticsConfig } from 'pliny/analytics'
 import { SearchProvider, SearchConfig } from 'pliny/search'
 import Header from '@/components/Header'
@@ -12,7 +12,7 @@ import siteMetadata from '@/data/siteMetadata'
 import { ThemeProviders } from './theme-providers'
 import { Metadata } from 'next'
 
-const geist = geist({
+const geist = geistFont({  // Using the new name here
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-geist-mono',
