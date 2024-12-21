@@ -39,6 +39,7 @@
     "postcss": "^8.4.24",
     "react": "18.2",
     "react-dom": "18.2",
+    "react-virtual": "^2.10.4",
     "reading-time": "1.5.0",
     "rehype-autolink-headings": "^7.1.0",
     "rehype-citation": "^2.0.0",
