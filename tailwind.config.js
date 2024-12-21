@@ -15,8 +15,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-geist-sans)', 'sans-serif'], // Use Geist Sans
-        mono: ['var(--font-geist-mono)', 'monospace'], // Use Geist Mono
+        sans: ['var(--geist-sans)', 'sans-serif'], // Use Geist Sans
+        mono: ['var(--geist-mono)', 'monospace'], // Use Geist Mono
       },
       lineHeight: {
         11: '2.75rem',
