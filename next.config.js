@@ -96,6 +96,5 @@ module.exports = () => {
 
       return config
     },
-    transpilePackages: ['geist'], // Added transpilePackages configuration for Geist font
   })
 }
