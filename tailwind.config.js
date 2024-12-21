@@ -1,7 +1,8 @@
 // @ts-check
-const colors = require('tailwindcss/colors');
+const { fontFamily } = require('tailwindcss/defaultTheme')
+const colors = require('tailwindcss/colors')
 
-/** @type {import("tailwindcss/types").Config} */
+/** @type {import("tailwindcss/types").Config } */
 module.exports = {
   content: [
     './node_modules/pliny/**/*.js',
@@ -14,15 +15,14 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['var(--geist-sans)', 'sans-serif'], // Use Geist Sans
-        mono: ['var(--geist-mono)', 'monospace'], // Use Geist Mono
-      },
       lineHeight: {
         11: '2.75rem',
         12: '3rem',
         13: '3.25rem',
         14: '3.5rem',
+      },
+      fontFamily: {
+        sans: ['var(--font-Space_Grotesk)', ...fontFamily.sans],
       },
       colors: {
         primary: colors.yellow,
@@ -73,4 +73,4 @@ module.exports = {
     },
   },
   plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
-};
+}
