@@ -1,27 +1,27 @@
-import 'css/tailwind.css'
-import 'pliny/search/algolia.css'
-import 'remark-github-blockquote-alert/alert.css'
-import { Geist_Sans, Geist_Mono } from 'next/font/google'
-import { SearchProvider, SearchConfig } from 'pliny/search'
-import Header from '@/components/Header'
-import SectionContainer from '@/components/SectionContainer'
-import Footer from '@/components/Footer'
-import siteMetadata from '@/data/siteMetadata'
-import { ThemeProviders } from './theme-providers'
-import { Metadata } from 'next'
+import 'css/tailwind.css';
+import 'pliny/search/algolia.css';
+import 'remark-github-blockquote-alert/alert.css';
+import { GeistSans } from 'geist/font/sans';
+import { GeistMono } from 'geist/font/mono';
+import { SearchProvider, SearchConfig } from 'pliny/search';
+import Header from '@/components/Header';
+import SectionContainer from '@/components/SectionContainer';
+import Footer from '@/components/Footer';
+import siteMetadata from '@/data/siteMetadata';
+import { ThemeProviders } from './theme-providers';
+import { Metadata } from 'next';
 
-// Correctly define the font variables
-const geistSans = Geist_Sans({
+const sans = GeistSans({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-geist-sans',
-})
+});
 
-const geistMono = Geist_Mono({
+const mono = GeistMono({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-geist-mono',
-})
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),
@@ -61,46 +61,49 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     images: [siteMetadata.socialBanner],
   },
-}
+};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const basePath = process.env.BASE_PATH || ''
+  const basePath = process.env.BASE_PATH || '';
 
   return (
     <html
       lang={siteMetadata.language}
-      className={`${geistSans.variable} ${geistMono.variable} scroll-smooth`}
+      className={`${sans.variable} ${mono.variable} scroll-smooth`}
       suppressHydrationWarning
     >
-      <link
-        rel="apple-touch-icon"
-        sizes="76x76"
-        href={`${basePath}/static/favicons/apple-touch-icon.png`}
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="32x32"
-        href={`${basePath}/static/favicons/favicon-32x32.png`}
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="16x16"
-        href={`${basePath}/static/favicons/favicon-16x16.png`}
-      />
-      <link rel="manifest" href={`${basePath}/static/favicons/site.webmanifest`} />
-      <link
-        rel="mask-icon"
-        href={`${basePath}/static/favicons/safari-pinned-tab.svg`}
-        color="#5bbad5"
-      />
-      <meta name="msapplication-TileColor" content="#000000" />
-      <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
-      <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000" />
-      <link rel="alternate" type="application/rss+xml" href={`${basePath}/feed.xml`} />
+      <head>
+        <link
+          rel="apple-touch-icon"
+          sizes="76x76"
+          href={`${basePath}/static/favicons/apple-touch-icon.png`}
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href={`${basePath}/static/favicons/favicon-32x32.png`}
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href={`${basePath}/static/favicons/favicon-16x16.png`}
+        />
+        <link rel="manifest" href={`${basePath}/static/favicons/site.webmanifest`} />
+        <link
+          rel="mask-icon"
+          href={`${basePath}/static/favicons/safari-pinned-tab.svg`}
+          color="#5bbad5"
+        />
+        <meta name="msapplication-TileColor" content="#000000" />
+        <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
+        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000" />
+        <link rel="alternate" type="application/rss+xml" href={`${basePath}/feed.xml`} />
+      </head>
       <body className="bg-white pl-[calc(100vw-100%)] text-black antialiased dark:bg-gray-950 dark:text-white">
         <ThemeProviders>
+          {/* Use Vercel Analytics */}
           <SectionContainer>
             <SearchProvider searchConfig={siteMetadata.search as SearchConfig}>
               <Header />
@@ -111,5 +114,5 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </ThemeProviders>
       </body>
     </html>
-  )
+  );
 }
