@@ -2,15 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Importing Geist fonts */
-@import 'geist/css/fonts.css'; /* Assuming the Geist font package includes a CSS import file, adjust as needed */
-
-/* Custom CSS */
-:root {
-  --font-geist-sans: 'Geist Sans', sans-serif;
-  --font-geist-mono: 'Geist Mono', monospace;
-}
-
 /* Tailwind overrides */
 .task-list-item::before {
   @apply hidden;
