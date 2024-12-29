@@ -147,27 +147,12 @@
           y="83"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 50%)"
-          opacity="0.7"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>4 contributions on 27th December 2023</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.02s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.7;0.8999999999999999;0.7"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.02s"
-          />
+          <title>0 contributions on 27th December 2023</title>
           
         </rect>
       
@@ -302,27 +287,12 @@
           y="146"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 50%)"
-          opacity="0.7"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>7 contributions on 6th January 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.78s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.7;0.8999999999999999;0.7"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.78s"
-          />
+          <title>0 contributions on 6th January 2024</title>
           
         </rect>
       
@@ -345,27 +315,12 @@
           y="41"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 50%)"
-          opacity="0.7"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>6 contributions on 8th January 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.46s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.7;0.8999999999999999;0.7"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.46s"
-          />
+          <title>0 contributions on 8th January 2024</title>
           
         </rect>
       
@@ -388,27 +343,12 @@
           y="83"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 50%)"
-          opacity="0.7"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>5 contributions on 10th January 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="0.65s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.7;0.8999999999999999;0.7"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="0.65s"
-          />
+          <title>0 contributions on 10th January 2024</title>
           
         </rect>
       
@@ -417,27 +357,12 @@
           y="104"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>3 contributions on 11th January 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.33s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.33s"
-          />
+          <title>0 contributions on 11th January 2024</title>
           
         </rect>
       
@@ -460,27 +385,12 @@
           y="146"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 50%)"
-          opacity="0.7"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>5 contributions on 13th January 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.55s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.7;0.8999999999999999;0.7"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.55s"
-          />
+          <title>0 contributions on 13th January 2024</title>
           
         </rect>
       
@@ -489,27 +399,12 @@
           y="20"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>1 contributions on 14th January 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.98s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.98s"
-          />
+          <title>0 contributions on 14th January 2024</title>
           
         </rect>
       
@@ -658,27 +553,12 @@
           y="104"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 40%)"
-          opacity="0.6"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>10 contributions on 25th January 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.93s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.6;0.8;0.6"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.93s"
-          />
+          <title>0 contributions on 25th January 2024</title>
           
         </rect>
       
@@ -715,27 +595,12 @@
           y="20"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 40%)"
-          opacity="0.6"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>8 contributions on 28th January 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="0.54s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.6;0.8;0.6"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="0.54s"
-          />
+          <title>0 contributions on 28th January 2024</title>
           
         </rect>
       
@@ -800,27 +665,12 @@
           y="125"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 30%)"
+          fill="hsl(48, 15%, 20%)"
           opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>12 contributions on 2nd February 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.81s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.5;0.7;0.5"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.81s"
-          />
+          <title>0 contributions on 2nd February 2024</title>
           
         </rect>
       
@@ -829,27 +679,12 @@
           y="146"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>3 contributions on 3rd February 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="0.03s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="0.03s"
-          />
+          <title>0 contributions on 3rd February 2024</title>
           
         </rect>
       
@@ -858,27 +693,12 @@
           y="20"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 40%)"
-          opacity="0.6"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>9 contributions on 4th February 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.69s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.6;0.8;0.6"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.69s"
-          />
+          <title>0 contributions on 4th February 2024</title>
           
         </rect>
       
@@ -887,27 +707,12 @@
           y="41"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>1 contributions on 5th February 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.47s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.47s"
-          />
+          <title>0 contributions on 5th February 2024</title>
           
         </rect>
       
@@ -1616,27 +1421,12 @@
           y="83"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>1 contributions on 27th March 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.31s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.31s"
-          />
+          <title>0 contributions on 27th March 2024</title>
           
         </rect>
       
@@ -1645,27 +1435,12 @@
           y="104"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>2 contributions on 28th March 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.70s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.70s"
-          />
+          <title>0 contributions on 28th March 2024</title>
           
         </rect>
       
@@ -1674,27 +1449,12 @@
           y="125"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>1 contributions on 29th March 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.96s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.96s"
-          />
+          <title>0 contributions on 29th March 2024</title>
           
         </rect>
       
@@ -1717,27 +1477,12 @@
           y="20"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 30%)"
+          fill="hsl(48, 15%, 20%)"
           opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>28 contributions on 31st March 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.84s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.5;0.7;0.5"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.84s"
-          />
+          <title>0 contributions on 31st March 2024</title>
           
         </rect>
       
@@ -1746,27 +1491,12 @@
           y="41"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>1 contributions on 1st April 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.81s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.81s"
-          />
+          <title>0 contributions on 1st April 2024</title>
           
         </rect>
       
@@ -1775,27 +1505,12 @@
           y="62"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>1 contributions on 2nd April 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.17s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.17s"
-          />
+          <title>0 contributions on 2nd April 2024</title>
           
         </rect>
       
@@ -1818,27 +1533,12 @@
           y="104"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>1 contributions on 4th April 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.14s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.14s"
-          />
+          <title>0 contributions on 4th April 2024</title>
           
         </rect>
       
@@ -2015,27 +1715,12 @@
           y="83"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 30%)"
+          fill="hsl(48, 15%, 20%)"
           opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>12 contributions on 17th April 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.88s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.5;0.7;0.5"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.88s"
-          />
+          <title>0 contributions on 17th April 2024</title>
           
         </rect>
       
@@ -2086,27 +1771,12 @@
           y="20"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>1 contributions on 21st April 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.92s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.92s"
-          />
+          <title>0 contributions on 21st April 2024</title>
           
         </rect>
       
@@ -2115,27 +1785,12 @@
           y="41"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 50%)"
-          opacity="0.7"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>6 contributions on 22nd April 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.91s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.7;0.8999999999999999;0.7"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.91s"
-          />
+          <title>0 contributions on 22nd April 2024</title>
           
         </rect>
       
@@ -2144,27 +1799,12 @@
           y="62"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 50%)"
-          opacity="0.7"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>7 contributions on 23rd April 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="0.28s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.7;0.8999999999999999;0.7"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="0.28s"
-          />
+          <title>0 contributions on 23rd April 2024</title>
           
         </rect>
       
@@ -2173,27 +1813,12 @@
           y="83"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 50%)"
-          opacity="0.7"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>4 contributions on 24th April 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.05s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.7;0.8999999999999999;0.7"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.05s"
-          />
+          <title>0 contributions on 24th April 2024</title>
           
         </rect>
       
@@ -2216,27 +1841,12 @@
           y="125"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>3 contributions on 26th April 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.35s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.35s"
-          />
+          <title>0 contributions on 26th April 2024</title>
           
         </rect>
       
@@ -2245,27 +1855,12 @@
           y="146"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 30%)"
+          fill="hsl(48, 15%, 20%)"
           opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>13 contributions on 27th April 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.26s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.5;0.7;0.5"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.26s"
-          />
+          <title>0 contributions on 27th April 2024</title>
           
         </rect>
       
@@ -2274,27 +1869,12 @@
           y="20"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 50%)"
-          opacity="0.7"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>4 contributions on 28th April 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.62s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.7;0.8999999999999999;0.7"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.62s"
-          />
+          <title>0 contributions on 28th April 2024</title>
           
         </rect>
       
@@ -2317,27 +1897,12 @@
           y="62"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>1 contributions on 30th April 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.26s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.26s"
-          />
+          <title>0 contributions on 30th April 2024</title>
           
         </rect>
       
@@ -2346,27 +1911,12 @@
           y="83"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 30%)"
+          fill="hsl(48, 15%, 20%)"
           opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>13 contributions on 1st May 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="0.10s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.5;0.7;0.5"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="0.10s"
-          />
+          <title>0 contributions on 1st May 2024</title>
           
         </rect>
       
@@ -2375,27 +1925,12 @@
           y="104"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>3 contributions on 2nd May 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="0.35s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="0.35s"
-          />
+          <title>0 contributions on 2nd May 2024</title>
           
         </rect>
       
@@ -2530,27 +2065,12 @@
           y="20"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>2 contributions on 12th May 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.74s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.74s"
-          />
+          <title>0 contributions on 12th May 2024</title>
           
         </rect>
       
@@ -2797,27 +2317,12 @@
           y="104"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>2 contributions on 30th May 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.91s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.91s"
-          />
+          <title>0 contributions on 30th May 2024</title>
           
         </rect>
       
@@ -2854,27 +2359,12 @@
           y="20"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 40%)"
-          opacity="0.6"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>10 contributions on 2nd June 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.57s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.6;0.8;0.6"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.57s"
-          />
+          <title>0 contributions on 2nd June 2024</title>
           
         </rect>
       
@@ -2953,27 +2443,12 @@
           y="146"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 30%)"
+          fill="hsl(48, 15%, 20%)"
           opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>11 contributions on 8th June 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.82s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.5;0.7;0.5"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.82s"
-          />
+          <title>0 contributions on 8th June 2024</title>
           
         </rect>
       
@@ -2982,27 +2457,12 @@
           y="20"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>1 contributions on 9th June 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.98s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.98s"
-          />
+          <title>0 contributions on 9th June 2024</title>
           
         </rect>
       
@@ -3011,27 +2471,12 @@
           y="41"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 50%)"
-          opacity="0.7"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>4 contributions on 10th June 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="0.60s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.7;0.8999999999999999;0.7"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="0.60s"
-          />
+          <title>0 contributions on 10th June 2024</title>
           
         </rect>
       
@@ -3194,27 +2639,12 @@
           y="146"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 50%)"
-          opacity="0.7"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>7 contributions on 22nd June 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.98s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.7;0.8999999999999999;0.7"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.98s"
-          />
+          <title>0 contributions on 22nd June 2024</title>
           
         </rect>
       
@@ -3223,27 +2653,12 @@
           y="20"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 50%)"
-          opacity="0.7"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>4 contributions on 23rd June 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.03s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.7;0.8999999999999999;0.7"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.03s"
-          />
+          <title>0 contributions on 23rd June 2024</title>
           
         </rect>
       
@@ -3476,27 +2891,12 @@
           y="83"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 40%)"
-          opacity="0.6"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>9 contributions on 10th July 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="0.14s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.6;0.8;0.6"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="0.14s"
-          />
+          <title>0 contributions on 10th July 2024</title>
           
         </rect>
       
@@ -3533,27 +2933,12 @@
           y="146"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 30%)"
+          fill="hsl(48, 15%, 20%)"
           opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>25 contributions on 13th July 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.94s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.5;0.7;0.5"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.94s"
-          />
+          <title>0 contributions on 13th July 2024</title>
           
         </rect>
       
@@ -3576,27 +2961,12 @@
           y="41"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>2 contributions on 15th July 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.11s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.11s"
-          />
+          <title>0 contributions on 15th July 2024</title>
           
         </rect>
       
@@ -3801,27 +3171,12 @@
           y="62"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 50%)"
-          opacity="0.7"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>5 contributions on 30th July 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.17s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.7;0.8999999999999999;0.7"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.17s"
-          />
+          <title>0 contributions on 30th July 2024</title>
           
         </rect>
       
@@ -3872,27 +3227,12 @@
           y="146"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 30%)"
+          fill="hsl(48, 15%, 20%)"
           opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>12 contributions on 3rd August 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.65s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.5;0.7;0.5"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.65s"
-          />
+          <title>0 contributions on 3rd August 2024</title>
           
         </rect>
       
@@ -3901,27 +3241,12 @@
           y="20"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 40%)"
-          opacity="0.6"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>10 contributions on 4th August 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.59s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.6;0.8;0.6"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.59s"
-          />
+          <title>0 contributions on 4th August 2024</title>
           
         </rect>
       
@@ -3930,27 +3255,12 @@
           y="41"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>3 contributions on 5th August 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="0.65s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="0.65s"
-          />
+          <title>0 contributions on 5th August 2024</title>
           
         </rect>
       
@@ -3959,27 +3269,12 @@
           y="62"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>1 contributions on 6th August 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.21s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.21s"
-          />
+          <title>0 contributions on 6th August 2024</title>
           
         </rect>
       
@@ -4044,27 +3339,12 @@
           y="20"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 30%)"
+          fill="hsl(48, 15%, 20%)"
           opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>22 contributions on 11th August 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.86s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.5;0.7;0.5"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.86s"
-          />
+          <title>0 contributions on 11th August 2024</title>
           
         </rect>
       
@@ -4115,27 +3395,12 @@
           y="104"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>1 contributions on 15th August 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="0.70s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="0.70s"
-          />
+          <title>0 contributions on 15th August 2024</title>
           
         </rect>
       
@@ -4144,27 +3409,12 @@
           y="125"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 50%)"
-          opacity="0.7"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>5 contributions on 16th August 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.42s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.7;0.8999999999999999;0.7"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.42s"
-          />
+          <title>0 contributions on 16th August 2024</title>
           
         </rect>
       
@@ -4397,27 +3647,12 @@
           y="41"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>1 contributions on 2nd September 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="0.40s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="0.40s"
-          />
+          <title>0 contributions on 2nd September 2024</title>
           
         </rect>
       
@@ -4440,27 +3675,12 @@
           y="83"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 50%)"
-          opacity="0.7"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>4 contributions on 4th September 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.85s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.7;0.8999999999999999;0.7"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.85s"
-          />
+          <title>0 contributions on 4th September 2024</title>
           
         </rect>
       
@@ -4539,27 +3759,12 @@
           y="62"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>2 contributions on 10th September 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.90s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.90s"
-          />
+          <title>0 contributions on 10th September 2024</title>
           
         </rect>
       
@@ -4568,27 +3773,12 @@
           y="83"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>2 contributions on 11th September 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.73s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.73s"
-          />
+          <title>0 contributions on 11th September 2024</title>
           
         </rect>
       
@@ -4597,27 +3787,12 @@
           y="104"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 40%)"
-          opacity="0.6"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>8 contributions on 12th September 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.33s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.6;0.8;0.6"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.33s"
-          />
+          <title>0 contributions on 12th September 2024</title>
           
         </rect>
       
@@ -4640,27 +3815,12 @@
           y="146"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 40%)"
-          opacity="0.6"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>10 contributions on 14th September 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="0.85s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.6;0.8;0.6"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="0.85s"
-          />
+          <title>0 contributions on 14th September 2024</title>
           
         </rect>
       
@@ -4683,27 +3843,12 @@
           y="41"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>2 contributions on 16th September 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.55s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.55s"
-          />
+          <title>0 contributions on 16th September 2024</title>
           
         </rect>
       
@@ -4726,27 +3871,12 @@
           y="83"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>3 contributions on 18th September 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.79s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.79s"
-          />
+          <title>0 contributions on 18th September 2024</title>
           
         </rect>
       
@@ -4769,27 +3899,12 @@
           y="125"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 50%)"
-          opacity="0.7"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>6 contributions on 20th September 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.60s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.7;0.8999999999999999;0.7"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.60s"
-          />
+          <title>0 contributions on 20th September 2024</title>
           
         </rect>
       
@@ -4812,27 +3927,12 @@
           y="20"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 40%)"
-          opacity="0.6"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>10 contributions on 22nd September 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.56s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.6;0.8;0.6"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.56s"
-          />
+          <title>0 contributions on 22nd September 2024</title>
           
         </rect>
       
@@ -4841,27 +3941,12 @@
           y="41"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 30%)"
+          fill="hsl(48, 15%, 20%)"
           opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>12 contributions on 23rd September 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.80s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.5;0.7;0.5"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.80s"
-          />
+          <title>0 contributions on 23rd September 2024</title>
           
         </rect>
       
@@ -4870,27 +3955,12 @@
           y="62"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>1 contributions on 24th September 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.70s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.70s"
-          />
+          <title>0 contributions on 24th September 2024</title>
           
         </rect>
       
@@ -4899,27 +3969,12 @@
           y="83"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 50%)"
-          opacity="0.7"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>4 contributions on 25th September 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.84s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.7;0.8999999999999999;0.7"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.84s"
-          />
+          <title>0 contributions on 25th September 2024</title>
           
         </rect>
       
@@ -4942,27 +3997,12 @@
           y="125"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>2 contributions on 27th September 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.38s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.38s"
-          />
+          <title>0 contributions on 27th September 2024</title>
           
         </rect>
       
@@ -4971,27 +4011,12 @@
           y="146"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>1 contributions on 28th September 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.43s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.43s"
-          />
+          <title>0 contributions on 28th September 2024</title>
           
         </rect>
       
@@ -5014,27 +4039,12 @@
           y="41"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>1 contributions on 30th September 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.16s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.16s"
-          />
+          <title>0 contributions on 30th September 2024</title>
           
         </rect>
       
@@ -5085,27 +4095,12 @@
           y="125"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 50%)"
-          opacity="0.7"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>5 contributions on 4th October 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.97s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.7;0.8999999999999999;0.7"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.97s"
-          />
+          <title>0 contributions on 4th October 2024</title>
           
         </rect>
       
@@ -5128,27 +4123,12 @@
           y="20"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 50%)"
-          opacity="0.7"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>6 contributions on 6th October 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.42s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.7;0.8999999999999999;0.7"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.42s"
-          />
+          <title>0 contributions on 6th October 2024</title>
           
         </rect>
       
@@ -5171,27 +4151,12 @@
           y="62"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 50%)"
-          opacity="0.7"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>7 contributions on 8th October 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="0.26s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.7;0.8999999999999999;0.7"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="0.26s"
-          />
+          <title>0 contributions on 8th October 2024</title>
           
         </rect>
       
@@ -5200,27 +4165,12 @@
           y="83"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 50%)"
-          opacity="0.7"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>7 contributions on 9th October 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.66s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.7;0.8999999999999999;0.7"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.66s"
-          />
+          <title>0 contributions on 9th October 2024</title>
           
         </rect>
       
@@ -5229,27 +4179,12 @@
           y="104"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>1 contributions on 10th October 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.38s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.38s"
-          />
+          <title>0 contributions on 10th October 2024</title>
           
         </rect>
       
@@ -5258,27 +4193,12 @@
           y="125"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 50%)"
-          opacity="0.7"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>5 contributions on 11th October 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.85s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.7;0.8999999999999999;0.7"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.85s"
-          />
+          <title>0 contributions on 11th October 2024</title>
           
         </rect>
       
@@ -5343,27 +4263,12 @@
           y="83"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>1 contributions on 16th October 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.07s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.07s"
-          />
+          <title>0 contributions on 16th October 2024</title>
           
         </rect>
       
@@ -5372,27 +4277,12 @@
           y="104"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 40%)"
-          opacity="0.6"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>10 contributions on 17th October 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.36s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.6;0.8;0.6"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.36s"
-          />
+          <title>0 contributions on 17th October 2024</title>
           
         </rect>
       
@@ -5401,27 +4291,12 @@
           y="125"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>1 contributions on 18th October 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="0.81s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="0.81s"
-          />
+          <title>0 contributions on 18th October 2024</title>
           
         </rect>
       
@@ -5430,27 +4305,12 @@
           y="146"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>2 contributions on 19th October 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.38s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.38s"
-          />
+          <title>0 contributions on 19th October 2024</title>
           
         </rect>
       
@@ -5529,27 +4389,12 @@
           y="125"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>2 contributions on 25th October 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="0.15s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="0.15s"
-          />
+          <title>0 contributions on 25th October 2024</title>
           
         </rect>
       
@@ -5628,27 +4473,12 @@
           y="104"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 30%)"
+          fill="hsl(48, 15%, 20%)"
           opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>13 contributions on 31st October 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.06s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.5;0.7;0.5"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.06s"
-          />
+          <title>0 contributions on 31st October 2024</title>
           
         </rect>
       
@@ -5671,27 +4501,12 @@
           y="146"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 30%)"
+          fill="hsl(48, 15%, 20%)"
           opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>11 contributions on 2nd November 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.28s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.5;0.7;0.5"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.28s"
-          />
+          <title>0 contributions on 2nd November 2024</title>
           
         </rect>
       
@@ -5700,27 +4515,12 @@
           y="20"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 30%)"
+          fill="hsl(48, 15%, 20%)"
           opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>14 contributions on 3rd November 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.82s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.5;0.7;0.5"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.82s"
-          />
+          <title>0 contributions on 3rd November 2024</title>
           
         </rect>
       
@@ -5729,27 +4529,12 @@
           y="41"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>1 contributions on 4th November 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.26s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.26s"
-          />
+          <title>0 contributions on 4th November 2024</title>
           
         </rect>
       
@@ -5828,27 +4613,12 @@
           y="20"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>1 contributions on 10th November 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.03s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.03s"
-          />
+          <title>0 contributions on 10th November 2024</title>
           
         </rect>
       
@@ -5857,27 +4627,12 @@
           y="41"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>3 contributions on 11th November 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.04s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.04s"
-          />
+          <title>0 contributions on 11th November 2024</title>
           
         </rect>
       
@@ -6012,27 +4767,12 @@
           y="104"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>1 contributions on 21st November 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="0.84s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="0.84s"
-          />
+          <title>0 contributions on 21st November 2024</title>
           
         </rect>
       
@@ -6055,27 +4795,12 @@
           y="146"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>2 contributions on 23rd November 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.12s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.12s"
-          />
+          <title>0 contributions on 23rd November 2024</title>
           
         </rect>
       
@@ -6084,27 +4809,12 @@
           y="20"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 50%)"
-          opacity="0.7"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>4 contributions on 24th November 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.70s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.7;0.8999999999999999;0.7"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="2.70s"
-          />
+          <title>0 contributions on 24th November 2024</title>
           
         </rect>
       
@@ -6155,27 +4865,12 @@
           y="104"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>1 contributions on 28th November 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.26s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="3.26s"
-          />
+          <title>0 contributions on 28th November 2024</title>
           
         </rect>
       
@@ -6240,27 +4935,12 @@
           y="62"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>1 contributions on 3rd December 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.19s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.9;1;0.9"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="1.19s"
-          />
+          <title>0 contributions on 3rd December 2024</title>
           
         </rect>
       
@@ -6269,27 +4949,12 @@
           y="83"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 50%)"
-          opacity="0.7"
+          fill="hsl(48, 15%, 20%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>7 contributions on 4th December 2024</title>
-          
-          <animate
-            attributeName="filter"
-            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="0.98s"
-          />
-          <animate
-            attributeName="opacity"
-            values="0.7;0.8999999999999999;0.7"
-            dur="3s"
-            repeatCount="indefinite"
-            begin="0.98s"
-          />
+          <title>0 contributions on 4th December 2024</title>
           
         </rect>
       
@@ -6368,12 +5033,27 @@
           y="62"
           width="18"
           height="18"
-          fill="hsl(48, 15%, 20%)"
+          fill="hsl(48, 100%, 30%)"
           opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>0 contributions on 10th December 2024</title>
+          <title>80 contributions on 10th December 2024</title>
+          
+          <animate
+            attributeName="filter"
+            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
+            dur="3s"
+            repeatCount="indefinite"
+            begin="0.96s"
+          />
+          <animate
+            attributeName="opacity"
+            values="0.5;0.7;0.5"
+            dur="3s"
+            repeatCount="indefinite"
+            begin="0.96s"
+          />
           
         </rect>
       
@@ -6382,12 +5062,27 @@
           y="83"
           width="18"
           height="18"
-          fill="hsl(48, 15%, 20%)"
-          opacity="0.5"
+          fill="hsl(48, 100%, 60%)"
+          opacity="0.9"
           rx="2"
           ry="2"
         >
-          <title>0 contributions on 11th December 2024</title>
+          <title>18 contributions on 11th December 2024</title>
+          
+          <animate
+            attributeName="filter"
+            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
+            dur="3s"
+            repeatCount="indefinite"
+            begin="2.38s"
+          />
+          <animate
+            attributeName="opacity"
+            values="0.9;1;0.9"
+            dur="3s"
+            repeatCount="indefinite"
+            begin="2.38s"
+          />
           
         </rect>
       
@@ -6396,12 +5091,27 @@
           y="104"
           width="18"
           height="18"
-          fill="hsl(48, 15%, 20%)"
+          fill="hsl(48, 100%, 30%)"
           opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>0 contributions on 12th December 2024</title>
+          <title>110 contributions on 12th December 2024</title>
+          
+          <animate
+            attributeName="filter"
+            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
+            dur="3s"
+            repeatCount="indefinite"
+            begin="0.21s"
+          />
+          <animate
+            attributeName="opacity"
+            values="0.5;0.7;0.5"
+            dur="3s"
+            repeatCount="indefinite"
+            begin="0.21s"
+          />
           
         </rect>
       
@@ -6410,12 +5120,27 @@
           y="125"
           width="18"
           height="18"
-          fill="hsl(48, 15%, 20%)"
-          opacity="0.5"
+          fill="hsl(48, 100%, 60%)"
+          opacity="0.9"
           rx="2"
           ry="2"
         >
-          <title>0 contributions on 13th December 2024</title>
+          <title>18 contributions on 13th December 2024</title>
+          
+          <animate
+            attributeName="filter"
+            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
+            dur="3s"
+            repeatCount="indefinite"
+            begin="3.54s"
+          />
+          <animate
+            attributeName="opacity"
+            values="0.9;1;0.9"
+            dur="3s"
+            repeatCount="indefinite"
+            begin="3.54s"
+          />
           
         </rect>
       
@@ -6424,12 +5149,27 @@
           y="146"
           width="18"
           height="18"
-          fill="hsl(48, 15%, 20%)"
-          opacity="0.5"
+          fill="hsl(48, 100%, 60%)"
+          opacity="0.9"
           rx="2"
           ry="2"
         >
-          <title>0 contributions on 14th December 2024</title>
+          <title>1 contributions on 14th December 2024</title>
+          
+          <animate
+            attributeName="filter"
+            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
+            dur="3s"
+            repeatCount="indefinite"
+            begin="3.95s"
+          />
+          <animate
+            attributeName="opacity"
+            values="0.9;1;0.9"
+            dur="3s"
+            repeatCount="indefinite"
+            begin="3.95s"
+          />
           
         </rect>
       
@@ -6452,26 +5192,26 @@
           y="41"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 100%, 30%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>2 contributions on 16th December 2024</title>
+          <title>78 contributions on 16th December 2024</title>
           
           <animate
             attributeName="filter"
             values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
             dur="3s"
             repeatCount="indefinite"
-            begin="2.68s"
+            begin="3.73s"
           />
           <animate
             attributeName="opacity"
-            values="0.9;1;0.9"
+            values="0.5;0.7;0.5"
             dur="3s"
             repeatCount="indefinite"
-            begin="2.68s"
+            begin="3.73s"
           />
           
         </rect>
@@ -6481,26 +5221,26 @@
           y="62"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 100%, 50%)"
+          opacity="0.7"
           rx="2"
           ry="2"
         >
-          <title>3 contributions on 17th December 2024</title>
+          <title>39 contributions on 17th December 2024</title>
           
           <animate
             attributeName="filter"
             values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
             dur="3s"
             repeatCount="indefinite"
-            begin="0.83s"
+            begin="3.61s"
           />
           <animate
             attributeName="opacity"
-            values="0.9;1;0.9"
+            values="0.7;0.8999999999999999;0.7"
             dur="3s"
             repeatCount="indefinite"
-            begin="0.83s"
+            begin="3.61s"
           />
           
         </rect>
@@ -6510,12 +5250,27 @@
           y="83"
           width="18"
           height="18"
-          fill="hsl(48, 15%, 20%)"
-          opacity="0.5"
+          fill="hsl(48, 100%, 40%)"
+          opacity="0.6"
           rx="2"
           ry="2"
         >
-          <title>0 contributions on 18th December 2024</title>
+          <title>52 contributions on 18th December 2024</title>
+          
+          <animate
+            attributeName="filter"
+            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
+            dur="3s"
+            repeatCount="indefinite"
+            begin="2.79s"
+          />
+          <animate
+            attributeName="opacity"
+            values="0.6;0.8;0.6"
+            dur="3s"
+            repeatCount="indefinite"
+            begin="2.79s"
+          />
           
         </rect>
       
@@ -6524,26 +5279,26 @@
           y="104"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 100%, 40%)"
+          opacity="0.6"
           rx="2"
           ry="2"
         >
-          <title>1 contributions on 19th December 2024</title>
+          <title>57 contributions on 19th December 2024</title>
           
           <animate
             attributeName="filter"
             values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
             dur="3s"
             repeatCount="indefinite"
-            begin="0.53s"
+            begin="3.65s"
           />
           <animate
             attributeName="opacity"
-            values="0.9;1;0.9"
+            values="0.6;0.8;0.6"
             dur="3s"
             repeatCount="indefinite"
-            begin="0.53s"
+            begin="3.65s"
           />
           
         </rect>
@@ -6553,12 +5308,27 @@
           y="125"
           width="18"
           height="18"
-          fill="hsl(48, 15%, 20%)"
-          opacity="0.5"
+          fill="hsl(48, 100%, 40%)"
+          opacity="0.6"
           rx="2"
           ry="2"
         >
-          <title>0 contributions on 20th December 2024</title>
+          <title>49 contributions on 20th December 2024</title>
+          
+          <animate
+            attributeName="filter"
+            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
+            dur="3s"
+            repeatCount="indefinite"
+            begin="3.46s"
+          />
+          <animate
+            attributeName="opacity"
+            values="0.6;0.8;0.6"
+            dur="3s"
+            repeatCount="indefinite"
+            begin="3.46s"
+          />
           
         </rect>
       
@@ -6567,26 +5337,26 @@
           y="146"
           width="18"
           height="18"
-          fill="hsl(48, 100%, 60%)"
-          opacity="0.9"
+          fill="hsl(48, 100%, 30%)"
+          opacity="0.5"
           rx="2"
           ry="2"
         >
-          <title>2 contributions on 21st December 2024</title>
+          <title>89 contributions on 21st December 2024</title>
           
           <animate
             attributeName="filter"
             values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
             dur="3s"
             repeatCount="indefinite"
-            begin="1.74s"
+            begin="3.47s"
           />
           <animate
             attributeName="opacity"
-            values="0.9;1;0.9"
+            values="0.5;0.7;0.5"
             dur="3s"
             repeatCount="indefinite"
-            begin="1.74s"
+            begin="3.47s"
           />
           
         </rect>
@@ -6596,12 +5366,27 @@
           y="20"
           width="18"
           height="18"
-          fill="hsl(48, 15%, 20%)"
-          opacity="0.5"
+          fill="hsl(48, 100%, 60%)"
+          opacity="0.9"
           rx="2"
           ry="2"
         >
-          <title>0 contributions on 22nd December 2024</title>
+          <title>2 contributions on 22nd December 2024</title>
+          
+          <animate
+            attributeName="filter"
+            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
+            dur="3s"
+            repeatCount="indefinite"
+            begin="3.19s"
+          />
+          <animate
+            attributeName="opacity"
+            values="0.9;1;0.9"
+            dur="3s"
+            repeatCount="indefinite"
+            begin="3.19s"
+          />
           
         </rect>
       
@@ -6624,12 +5409,27 @@
           y="62"
           width="18"
           height="18"
-          fill="hsl(48, 15%, 20%)"
-          opacity="0.5"
+          fill="hsl(48, 100%, 60%)"
+          opacity="0.9"
           rx="2"
           ry="2"
         >
-          <title>0 contributions on 24th December 2024</title>
+          <title>2 contributions on 24th December 2024</title>
+          
+          <animate
+            attributeName="filter"
+            values="url(#led-glow);url(#led-glow-strong);url(#led-glow)"
+            dur="3s"
+            repeatCount="indefinite"
+            begin="2.29s"
+          />
+          <animate
+            attributeName="opacity"
+            values="0.9;1;0.9"
+            dur="3s"
+            repeatCount="indefinite"
+            begin="2.29s"
+          />
           
         </rect>
       </svg>
