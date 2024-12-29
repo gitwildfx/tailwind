@@ -1,11 +1,10 @@
 import 'css/tailwind.css'
-//import '@geist-ui/react/css/fonts.css'
 import 'pliny/search/algolia.css'
 import 'remark-github-blockquote-alert/alert.css'
-///import { Space_Grotesk } from 'next/font/google'
-import { GeistSans } from 'geist/font/sans'
-import { GeistMono } from 'geist/font/mono'
-import { Analytics, AnalyticsConfig } from 'pliny/analytics'
+
+import { Space_Grotesk } from 'next/font/google'
+import { Analytics } from "@vercel/analytics/react"
+//import { Analytics, AnalyticsConfig } from 'pliny/analytics'
 import { SearchProvider, SearchConfig } from 'pliny/search'
 import Header from '@/components/Header'
 import SectionContainer from '@/components/SectionContainer'
@@ -14,41 +13,11 @@ import siteMetadata from '@/data/siteMetadata'
 import { ThemeProviders } from './theme-providers'
 import { Metadata } from 'next'
 
-// Space_Grotesk font configuration
-/*const space_grotesk = Space_Grotesk({
+const space_grotesk = Space_Grotesk({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-space-grotesk',
-})*/
-
-import { localFont } from 'next/font';
-
-// Define the Geist font
-const geist = localFont({
-  src: [
-    { path: "../public/fonts/Geist-Regular.otf", weight: "500" },
-    { path: "../public/fonts/Geist-Medium.otf", weight: "600" },
-    { path: "../public/fonts/Geist-SemiBold.otf", weight: "700" },
-    { path: "../public/fonts/Geist-Bold.otf", weight: "800" },
-    { path: "../public/fonts/Geist-Black.otf", weight: "900" },
-  ],
-  display: "swap",
-  variable: "--font-geist-sans",
-  fallback: ["space-grotesk"],
-});
-
-// Define the Geist Mono font
-const geistMono = localFont({
-  src: [
-    { path: "../public/fonts/GeistMono-Regular.otf", weight: "500" },
-    { path: "../public/fonts/GeistMono-Medium.otf", weight: "600" },
-    { path: "../public/fonts/GeistMono-SemiBold.otf", weight: "700" },
-    { path: "../public/fonts/GeistMono-Bold.otf", weight: "800" },
-  ],
-  display: "swap",
-  variable: "--font-geist-mono",
-  fallback: ["monospace"],
-});
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),
@@ -96,7 +65,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang={siteMetadata.language}
-      className={`${geistSans.variable} ${geistMono.variable} scroll-smooth`}
+      className={`${space_grotesk.variable} scroll-smooth`}
       suppressHydrationWarning
     >
       <link
