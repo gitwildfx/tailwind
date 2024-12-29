@@ -9,8 +9,14 @@ type Project = {
 // Your data array with the Project type applied
 const projectsData: Project[] = [
   {
-    title: 'Code of the Lion',
-    description: `Learn basic Python skills by helping a lost lion cub, Leo, find his way back home. Code of the Lion is an open-source training guide that develops your basic coding skills through iterative-based challenges.`,
+    title: 'Hack this Page',
+    description: `Discover how to build and deploy a Tailwind CSS blog. A beginner-friendly guide covering setup, GitHub integration, and template customization with Artificial Intelligence support.`,
+    imgSrc: '/static/images/tailwind.png',
+    href: '/blog/hack-this-page', // relative URL
+  },
+  {
+    title: 'Code of the Lion™',
+    description: `Learn basic Python by helping a lost lion cub, Leo, find his way back home. Code of the Lion is an open-source training guide that develops your coding skills through iterative-based challenges.`,
     imgSrc: '/static/images/cotl.png',
     href: '/blog/code-of-the-lion', // relative URL
   },

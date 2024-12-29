@@ -7,12 +7,9 @@ summary: "A Python Adventure Game for All Ages"
 ---
 
 <div style={{ textAlign: "center" }}>
-  <img src="/static/images/ide.png" alt="ide" />
+  <img src="/static/images/leo-python.gif" alt="ide" />
   <p>Online-Python©</p>
 </div>
-<p className="mb-6 mt-4 text-md leading-7 text-gray-500 dark:text-gray-600">
-► <em>For detailed explanations and visual guides, download the FREE eBook below. </em>
-</p>
 
 # Launch Code Editor (IDE)
 
@@ -21,14 +18,14 @@ summary: "A Python Adventure Game for All Ages"
     <img 
       src="/static/images/deploy.png" 
       alt="Deploy Image"
-      style={{ width: "103px", height: "32px", objectFit: "contain" }}
+      style={{ width: "118px", height: "33px", objectFit: "contain" }}
     />
   </a>
-  <a href="https://raw.githubusercontent.com/wildfxcode/tailwind/main/data/blog/uploads/code_of_the_lion.pdf" target="_blank">
+  <a href="https://drive.google.com/file/d/1ZkEWCdh1_4ZD2UpkHE_kp7b5PBkIi6CY/view?usp=sharing" target="_blank">
     <img 
       src="/static/images/ebook.png" 
       alt="Download eBook"
-      style={{ width: "153px", height: "32px", objectFit: "contain" }}
+      style={{ width: "156px", height: "33px", objectFit: "contain" }}
     />
   </a>
 </div>
@@ -144,7 +141,7 @@ print("Oh no! Monkeys, Lulu and Milo, are stranded on opposite sides of the rive
 while True:
   choice = input("Who will Leo save first? (1. Lulu or 2. Milo) ").upper()
 
-  if choice in ("1", "LULU"):
+  if choice in ("1", "LUULU"):
     rescued_monkey = "Lulu"
     break
   elif choice in ("2", "MILO"):
@@ -196,7 +193,7 @@ for riddle, answer in riddles_and_answers:
   print(riddle)
   guess = input("What is your guess? ")
 
-  if guess.strip().lower() == answer.lower():
+  if guess.lower() == answer.lower():
     user_score += 1
     print(f"You're right! That's {user_score} out of {len(riddles_and_answers)} riddles solved.")
   else:
