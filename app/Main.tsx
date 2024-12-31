@@ -50,7 +50,7 @@ export default function Home({ posts }) {
           </h2>
         </div>
         <div
-          id="newsletterForm"
+          id="newsletterSection"
           className="mb-12 mt-4 flex w-full max-w-[600px] justify-center xl:w-1/2 xl:justify-start"
         >
           <NewsletterForm title="Subscribe to the newsletter" />
