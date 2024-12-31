@@ -1,3 +1,4 @@
+
 import Link from '@/components/Link'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
@@ -49,10 +50,7 @@ export default function Home({ posts }) {
             {`. Discover how we're changing the way people learn and interact with data in the modern age.`}
           </h2>
         </div>
-        <div
-          id="newsletterSection"
-          className="mb-12 mt-4 flex w-full max-w-[600px] justify-center xl:w-1/2 xl:justify-start"
-        >
+        <div className="mb-12 mt-4 flex w-full max-w-[600px] justify-center xl:w-1/2 xl:justify-start">
           <NewsletterForm title="Subscribe to the newsletter" />
         </div>
       </div>
@@ -73,9 +71,7 @@ export default function Home({ posts }) {
                     <dl>
                       <dt className="sr-only">Published on</dt>
                       <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                        <time dateTime={date}>
-                          {formatDate(date, siteMetadata.locale)}
-                        </time>
+                        <time dateTime={date}>{formatDate(date, siteMetadata.locale)}</time>
                       </dd>
                     </dl>
                     <div className="space-y-5 xl:col-span-3">
