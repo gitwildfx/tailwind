@@ -52,7 +52,7 @@ export default function Home({ posts }) {
         <div
           id="newsletterSection"
           className="mb-12 mt-4 flex w-full max-w-[600px] justify-center xl:w-1/2 xl:justify-start"
-          >
+        >
         </div>
       </div>
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
