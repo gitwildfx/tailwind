@@ -11,7 +11,7 @@ const projectsData: Project[] = [
   {
     title: 'Hack this Page',
     description: `Discover how to build and deploy a Tailwind CSS blog. A beginner-friendly guide covering setup, GitHub integration, and template customization with Artificial Intelligence support.`,
-    imgSrc: '/static/images/tailwind.png',
+    imgSrc: '/static/images/githack.png',
     href: '/blog/hack-this-page', // relative URL
   },
   {
