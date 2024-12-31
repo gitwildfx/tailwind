@@ -31,7 +31,7 @@ export default function Home({ posts }) {
               </a>
             </div>
           </div>
-          <h2 className="center mb-4 text-lg text-gray-600 dark:text-gray-400">
+          <h2 id="newsletterSection" className="center mb-4 text-lg text-gray-600 dark:text-gray-400">
             {`Interested in a new career transition? Check out our available `}
             <a
               href="https://wildfx.io/courses"
