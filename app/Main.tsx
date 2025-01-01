@@ -32,18 +32,18 @@ export default function Home({ posts }) {
             </div>
           </div>
           <h2 className="center mb-4 text-lg text-gray-600 dark:text-gray-400">
-            {`Interested in a rewarding career with limitless potential? AI and `}
+            {`Did you know that AI and developer roles are expected to grow 25% over the next decade?`}
             <a
               href="https://www.wildfx.io/blog/hire-me#landing-the-tech-job-and-keeping-it"
               className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
             >
-              developer
+              (Bls.gov)
             </a>
-            {` roles are expected to grow 25% over the next decade? Check out our unique learning opportunities or try the free `}
+            {` Check out our unique learning opportunities or try the free `}
             <a
               href="https://wildfx.io/blog/code-of-the-lion"
               rel="noopener"
-              target="_blank"
+              target="self"
               className="inline-flex items-center text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
             >
               Code Challenge
