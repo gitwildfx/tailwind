@@ -16,7 +16,7 @@ export default function Home({ posts }) {
             &lt;/Learn_Code&gt;
           </h1>
           <p className="mb-6 mt-4 text-lg leading-7 text-gray-500 dark:text-gray-400">
-            {siteMetadata.description}
+            <em>{siteMetadata.description}</em>
           </p>
           <div className="relative mx-0 my-4 flex w-full justify-center xl:w-full xl:justify-start">
             <div className="mb-2 w-full max-w-[600px]">
