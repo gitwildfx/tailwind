@@ -1,5 +1,5 @@
 const headerNavLinks = [
-  { href: '/blog/coding-of-the-lion.mdx', title: 'Start Coding', isButton: true },
+  { href: '/blog/code-of-the-lion.mdx', title: 'Start Coding', isButton: true },
   { href: '/', title: 'Home' },
   { href: '/blog', title: 'Blog' },
   { href: '/projects', title: 'Learn' },
