@@ -49,7 +49,9 @@ export default function Home({ posts }) {
             {`. Discover how we're changing the way people learn and interact with data in the modern age.`}
           </h2>
         </div>
-        <div className="mb-12 mt-4 flex w-full max-w-[600px] justify-center xl:justify-start">
+        <div id="newsletterSection">
+        </div>
+        <div className="mb-12 mt-4 flex w-full max-w-[600px] justify-center xl:w-1/2 xl:justify-start">
           <NewsletterForm title="Subscribe to the newsletter" />
         </div>
       </div>
