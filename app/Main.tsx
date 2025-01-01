@@ -32,14 +32,7 @@ export default function Home({ posts }) {
             </div>
           </div>
           <h2 className="center mb-4 text-lg text-gray-600 dark:text-gray-400">
-            {`Interested in a new career transition? Sign up for our `}
-            <a
-              href="https://wildfx.io/courses"
-              className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-            >
-              courses
-            </a>
-            {` or try the `}
+            {`Interested in a rewarding career with limitless potential? The AI and developer market is expected to grow 25% over the next decade. Check out our unique learning opportunities or try the `}
             <a
               href="https://wildfx.io/blog/code-of-the-lion"
               rel="noopener"
