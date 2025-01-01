@@ -27,7 +27,7 @@ const Header = () => {
           )}
         </div>
       </Link>
-      <div className="flex items-center w-full justify-between space-x-4 leading-5 sm:space-x-6">
+      <div className="flex w-full items-center justify-between space-x-4 leading-5 sm:space-x-6">
         {/* Desktop and larger screens: Navigation links */}
         <div className="no-scrollbar hidden w-auto items-center space-x-4 overflow-x-auto sm:flex sm:space-x-6 md:max-w-72 lg:max-w-96">
           {headerNavLinks
