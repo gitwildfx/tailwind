@@ -49,11 +49,11 @@ export default function Home({ posts }) {
             {`. Discover how we're changing the way people learn and interact with data in the modern age.`}
           </h2>
         </div>
-        <div className="mb-12 mt-4 flex w-full max-w-[600px] justify-center xl:w-1/2 xl:justify-start">
+        <div id="newsletterSection" className="mb-12 mt-4 flex w-full max-w-[600px]">
           <NewsletterForm title="Subscribe to the newsletter" />
         </div>
       </div>
-      <div id="newsletterSection" className="divide-y divide-gray-200 dark:divide-gray-700">
+      <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pb-8 pt-6 md:space-y-5">
           <h2 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-12">
             Articles
