@@ -6,7 +6,8 @@ import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 
 const Header = () => {
-  let headerClass = 'flex items-center w-full bg-white dark:bg-gray-950 justify-between py-10'
+  let headerClass =
+    'flex items-center w-full bg-white dark:bg-gray-950 justify-between py-10'
   if (siteMetadata.stickyNav) {
     headerClass += ' sticky top-0 z-50'
   }
@@ -37,7 +38,7 @@ const Header = () => {
                 href={link.href}
                 className={
                   link.isButton
-                    ? 'rounded border border-orange-500 bg-transparent px-4 py-2 font-semibold text-orange-500 hover:border-transparent hover:bg-orange-500 hover:text-white'
+                    ? 'rounded border border-yellow-500 bg-transparent px-4 py-2 font-semibold text-yellow-500 hover:border-transparent hover:bg-yellow-500 hover:text-white'
                     : 'block font-medium text-gray-900 hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-400'
                 }
               >
