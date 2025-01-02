@@ -41,7 +41,7 @@ export default function Home({ posts }) {
             </a>
             {` Check out our unique learning opportunities or try the free `}
             <a
-              href="/blog/code-of-the-lion"
+              href="https://wildfx.io/blog/code-of-the-lion"
               className="inline-flex items-center text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
             >
               Code Challenge
