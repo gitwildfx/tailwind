@@ -1,5 +1,5 @@
 const headerNavLinks = [
-  { href: '/blog/code-of-the-lion', title: 'Start Coding' },
+  { href: '/blog/code-of-the-lion', title: 'Start >' },
   { href: '/blog', title: 'Blog' },
   { href: '/projects', title: 'Learn' },
   { href: '/courses', title: 'Courses' },
