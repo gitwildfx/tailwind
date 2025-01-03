@@ -19,7 +19,7 @@ export default function Home({ posts }) {
             {siteMetadata.description}
           </p>
           <div className="relative mx-0 my-4 flex w-full justify-center xl:w-full xl:justify-start">
-            <div className="mb-2 w-full max-w-[600px]">
+            <div id="newsletterSection" className="mb-2 w-full max-w-[600px]">
               <a href="https://github.com/gitwildfx" target="_blank">
                 <Image
                   src="https://raw.githubusercontent.com/gitwildfx/tailwind/main/public/static/images/timlrx-github-contributions.svg"
@@ -63,7 +63,7 @@ export default function Home({ posts }) {
             {`. Discover how we're changing the way people learn and interact with data in the modern age.`}
           </h2>
         </div>
-        <div id="newsletterSection" className="mb-12 mt-4 flex w-full max-w-[600px] justify-center">
+        <div className="mb-12 mt-4 flex w-full max-w-[600px] justify-center">
           <NewsletterForm title="Subscribe to the newsletter" />
         </div>
       </div>
