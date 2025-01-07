@@ -2,7 +2,8 @@ import 'css/tailwind.css'
 import 'pliny/search/algolia.css'
 import 'remark-github-blockquote-alert/alert.css'
 import { Space_Grotesk } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/react' // Changed from double to single quotes
+import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 // import { Analytics, AnalyticsConfig } from 'pliny/analytics' // Commented out
 import { SearchProvider, SearchConfig } from 'pliny/search'
 import Header from '@/components/Header'
@@ -11,7 +12,6 @@ import Footer from '@/components/Footer'
 import siteMetadata from '@/data/siteMetadata'
 import { ThemeProviders } from './theme-providers'
 import { Metadata } from 'next'
-import { SpeedInsights } from '@vercel/speed-insights/next'
 
 const space_grotesk = Space_Grotesk({
   subsets: ['latin'],
