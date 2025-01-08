@@ -9,6 +9,12 @@ type Project = {
 // Your data array with the Project type applied
 const projectsData: Project[] = [
   {
+    title: 'Docusaurus',
+    description: `Build a customized Document repository from the ground up. Employ a live Code Enviornment to design, deploy, and launch your very first website. Plus, you'll learn about dinosaurs...not really.`,
+    imgSrc: '/static/images/dinosaurus.png',
+    href: 'https://docusaurus-fqlz.vercel.app/', // relative URL
+  },
+  {
     title: 'Hack this Page',
     description: `Discover how to build and deploy a Tailwind CSS blog. A beginner-friendly guide covering setup, GitHub integration, and template customization with Artificial Intelligence support.`,
     imgSrc: '/static/images/githack2.png',
