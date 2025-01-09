@@ -12,7 +12,7 @@ const projectsData: Project[] = [
     title: 'Docusaurus',
     description: `Build a customized Document repository from the ground up. Employ a live Code Enviornment to design, deploy, and launch your very first website. Plus, you'll learn about dinosaurs...not really.`,
     imgSrc: '/static/images/docusaurus.gif',
-    href: 'https://docusaurus-fqlz.vercel.app/', // relative URL
+    href: 'https://docusaurus-2-template.vercel.app/', // relative URL
   },
   {
     title: 'Hack this Page',
