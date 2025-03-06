@@ -30,7 +30,7 @@ const projectsData: Project[] = [
     title: '"My Son Rising" (Audiobook)',
     description: `A message of hope and redemption for wandering souls desperate to know true freedom. Reclaim your rightful purpose as spiritual sons, and discover timeless wisdom and healing found within these letters.`,
     imgSrc: '/static/images/sun.png',
-    href: 'https://www.prodigalhouse.net/msr', // external URL
+    href: 'https://www.ancientpaths.io/my-son-rising', // external URL
   },
 ]
 
