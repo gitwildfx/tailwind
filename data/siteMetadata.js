@@ -13,7 +13,7 @@ const siteMetadata = {
   email: 'ask@wildfx.io',
   github: 'https://github.com/gitwildfx/tailwind',
   youtube: 'https://youtube.com/@wild-fx',
-  discord: 'https://discord.gg/PXgCYNyqwn',
+  discord: 'https://discord.gg/PhSC3CVCmN',
   locale: 'en-US',
   // set to true if you want a navbar fixed to the top
   stickyNav: false,
