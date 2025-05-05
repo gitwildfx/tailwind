@@ -10,7 +10,7 @@ const siteMetadata = {
   siteRepo: 'https://github.com/gitwildfx/tailwind',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
-  email: 'ask@wildfx.io',
+  email: 'mail.wildfx@gmail.com',
   github: 'https://github.com/gitwildfx/tailwind',
   youtube: 'https://youtube.com/@wild-fx',
   discord: 'https://discord.gg/PhSC3CVCmN',
