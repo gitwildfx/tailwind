@@ -24,7 +24,7 @@ export default function Home({ posts }) {
                 src="/static/images/banner3.jpg"
                 alt="Banner"
                 className="mb-4 h-auto max-w-full object-contain"
-                width={1646}
+                width={1593}
                 height={284}
               />
               <a href="https://github.com/gitwildfx" target="_blank" rel="noopener noreferrer">
