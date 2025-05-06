@@ -21,7 +21,7 @@ export default function Home({ posts }) {
           <div className="relative mx-0 my-4 flex w-full justify-center xl:w-full xl:justify-start">
             <div id="newsletterSection" className="mb-2 w-full max-w-[600px]">
               <Image
-                src="/static/images/banner2.jpg"
+                src="/static/images/banner3.jpg"
                 alt="Banner"
                 className="mb-4 h-auto max-w-full object-contain"
                 width={1646}
