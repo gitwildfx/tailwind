@@ -20,6 +20,13 @@ export default function Home({ posts }) {
           </p>
           <div className="relative mx-0 my-4 flex w-full justify-center xl:w-full xl:justify-start">
             <div id="newsletterSection" className="mb-2 w-full max-w-[600px]">
+              <Image
+                src="https://raw.githubusercontent.com/gitwildfx/tailwind/main/public/static/images/banner.jpg"
+                alt="Banner"
+                className="mb-4 h-auto max-w-full object-contain"
+                width={600}
+                height={200}
+                />
               <a href="https://github.com/gitwildfx" target="_blank">
                 <Image
                   src="https://raw.githubusercontent.com/gitwildfx/tailwind/main/public/static/images/timlrx-github-contributions.svg"
