@@ -24,8 +24,8 @@ export default function Home({ posts }) {
                 src="https://raw.githubusercontent.com/gitwildfx/tailwind/main/public/static/images/banner.jpg"
                 alt="Banner"
                 className="mb-4 h-auto max-w-full object-contain"
-                width={600}
-                height={200}
+                width={1646}
+                height={284}
               />
               <a href="https://github.com/gitwildfx" target="_blank" rel="noopener noreferrer">
                 <Image
