@@ -9,7 +9,7 @@ type Course = {
 // app/data/coursesData.ts
 const coursesData = [
   {
-    title: 'W001: Intro to Modern Computing (Summer 2025)',
+    title: 'W001: Intro to Modern Computing (June 12-13 2025 @ 7-9PM EST)',
     description: 'An introduction to programming languages for people of all skill levels. We will be exploring Javascript, Python, and HTML among other helpful tools like AI/LLMs for code development.',
     imgSrc: '/static/images/code.jpg',
     href: '/blog/intro-to-modern-computing',
