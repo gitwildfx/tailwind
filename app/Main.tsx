@@ -27,14 +27,18 @@ export default function Home({ posts }) {
                 width={1593}
                 height={284}
               />
-              <a href="https://github.com/gitwildfx" target="_blank" rel="noopener noreferrer">
-               <Image
-                 src="/static/images/timlrx-github-contributions.svg"
-                 alt="WildFx GitHub Contributions Chart"
-                 className="h-auto max-w-full object-contain"
-                 width={600}
-                 height={400}
-              />
+              <a
+                href="https://github.com/gitwildfx"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/static/images/timlrx-github-contributions.svg"
+                  alt="WildFx GitHub Contributions Chart"
+                  className="h-auto max-w-full object-contain"
+                  width={600}
+                  height={400}
+                />
               </a>
             </div>
           </div>
@@ -74,6 +78,7 @@ export default function Home({ posts }) {
           <NewsletterForm title="Subscribe to the newsletter" />
         </div>
       </div>
+
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pb-8 pt-6 md:space-y-5">
           <h2 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-12">
@@ -91,7 +96,9 @@ export default function Home({ posts }) {
                     <dl>
                       <dt className="sr-only">Published on</dt>
                       <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                        <time dateTime={date}>{formatDate(date, siteMetadata.locale)}</time>
+                        <time dateTime={date}>
+                          {formatDate(date, siteMetadata.locale)}
+                        </time>
                       </dd>
                     </dl>
                     <div className="space-y-5 xl:col-span-3">
@@ -132,6 +139,7 @@ export default function Home({ posts }) {
           })}
         </ul>
       </div>
+
       {posts.length > MAX_DISPLAY && (
         <div className="flex justify-end text-base font-medium leading-6">
           <Link
