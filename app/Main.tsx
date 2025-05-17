@@ -34,7 +34,7 @@ export default function Home({ posts }) {
                   className="h-auto max-w-full object-contain"
                   width={600}
                   height={400}
-                  />
+              />
               </a>
             </div>
           </div>
