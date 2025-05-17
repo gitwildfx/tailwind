@@ -28,12 +28,12 @@ export default function Home({ posts }) {
                 height={284}
               />
               <a href="https://github.com/gitwildfx" target="_blank" rel="noopener noreferrer">
-                <img
-                  src="https://raw.githubusercontent.com/gitwildfx/tailwind/main/public/static/images/timlrx-github-contributions.svg"
-                  alt="WildFx GitHub Contributions Chart"
-                  className="h-auto max-w-full object-contain"
-                  width={600}
-                  height={400}
+               <Image
+                 src="/static/images/timlrx-github-contributions.svg"
+                 alt="WildFx GitHub Contributions Chart"
+                 className="h-auto max-w-full object-contain"
+                 width={600}
+                 height={400}
               />
               </a>
             </div>
