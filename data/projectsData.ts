@@ -9,6 +9,12 @@ type Project = {
 // Your data array with the Project type applied
 const projectsData: Project[] = [
   {
+    title: 'Code of the Lion™',
+    description: `Learn basic Python by helping a lost lion cub, Leo, find his way back home. Code of the Lion is an open-source training guide that develops your coding skills through iterative-based challenges.`,
+    imgSrc: '/static/images/cotl.png',
+    href: '/blog/code-of-the-lion', // relative URL
+  },
+  {
     title: 'Docusaurus v2',
     description: `Build a customized Document repository from the ground up. Employ a live Code Enviornment to design, deploy, and launch your very first website. Plus, you'll learn about dinosaurs...not really.`,
     imgSrc: '/static/images/docusaurus.gif',
@@ -19,12 +25,6 @@ const projectsData: Project[] = [
     description: `Discover how to build and deploy a Tailwind CSS blog. A beginner-friendly guide covering setup, GitHub integration, and template customization with Artificial Intelligence support.`,
     imgSrc: '/static/images/githack2.png',
     href: '/blog/hack-this-page', // relative URL
-  },
-  {
-    title: 'Code of the Lion™',
-    description: `Learn basic Python by helping a lost lion cub, Leo, find his way back home. Code of the Lion is an open-source training guide that develops your coding skills through iterative-based challenges.`,
-    imgSrc: '/static/images/cotl.png',
-    href: '/blog/code-of-the-lion', // relative URL
   },
   {
     title: '"My Son Rising" (Audiobook)',
