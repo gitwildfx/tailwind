@@ -27,6 +27,14 @@ module.exports = {
       colors: {
         primary: colors.yellow,
         gray: colors.gray,
+        novel: {
+          background: '#282828',
+          text: '#E5E5E5',
+          highlight: '#A9A9A9',
+          'accent-green': '#B1D47B',
+          'accent-teal': '#57B4A8',
+          'accent-yellow': '#DEDC70',
+        },
       },
       zIndex: {
         60: '60',
