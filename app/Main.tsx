@@ -13,7 +13,7 @@ export default function Home({ posts }) {
       <div className="my-3 flex flex-col items-center gap-x-12 xl:mb-9 xl:flex-row xl:justify-between">
         <div className="flex-1 pt-3">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            &lt;/code:YouCan&gt;
+            &lt;/Learn_Code&gt;
           </h1>
           <p className="mb-6 mt-4 text-lg leading-7 text-gray-500 dark:text-gray-400">
             {siteMetadata.description}
