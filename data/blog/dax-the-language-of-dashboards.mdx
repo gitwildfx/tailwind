@@ -31,7 +31,9 @@ This measure sums all values in [Sales Amount]. It dynamically adjusts based on 
 **Learn**: CALCULATE() with filters  
 **Goal**: Return sales only for 2025.
 
+```DAX
 Sales 2025 = CALCULATE ( SUM ( Sales[Sales Amount] ), Sales[Year] = 2025 )
+```
 
 🔎 Explanation:  
 CALCULATE changes the filter context—here it restricts totals to the year 2025.
@@ -96,11 +98,6 @@ With these 5 labs, you’ve learned how to:
 
 👉 Next step: Try combining these concepts to calculate **Year-to-Date Sales by Region**, then compare it to last year using SAMEPERIODLASTYEAR.  
 
-<div class="flex justify-center gap-3 my-4"> 
-  <a href="https://dax.guide/" target="_blank"> 
-    <img src="/static/images/deploy.png" alt="Learn DAX" class="w-[118px] h-[33px] object-contain hover:scale-105 transition-transform" /> 
-  </a> 
-  <a href="https://learn.microsoft.com/en-us/dax/dax-overview" target="_blank"> 
-    <img src="/static/images/ebook.png" alt="DAX Docs" class="w-[156px] h-[33px] object-contain hover:scale-105 transition-transform" /> 
-  </a> 
-</div>
+**Learn More:**  
+- [The DAX language](https://dax.guide/)  
+- [Microsoft - DAX Overview](https://learn.microsoft.com/en-us/dax/dax-overview)
