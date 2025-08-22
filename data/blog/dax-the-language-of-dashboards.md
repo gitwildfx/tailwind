@@ -1,0 +1,105 @@
+---
+title: 'DAX Adventure: 5 Labs into Data Analysis Expressions'
+date: '2025-08-22'
+tags: ['dax', 'powerbi', 'analysis', 'data']
+draft: false
+summary: "A 5-lab guided journey into DAX with practical examples in Power BI."
+---
+
+► Welcome to the **DAX Adventure**—a step-by-step learning series to master **DAX (Data Analysis Expressions)**, the formula language of **Power BI, Excel Power Pivot, and Analysis Services**.  
+
+<div class="flex justify-center my-4">
+  <img src="/static/images/dax-dashboard.png" alt="DAX Dashboard" class="rounded-xl shadow-md" />
+</div>
+
+---
+
+# Lab 1: Basic Aggregations
+**Learn**: SUM()
+**Goal**: Calculate total sales.
+
+```DAX
+Total Sales = SUM ( Sales[Sales Amount] )
+```
+
+🔎 Explanation:  
+This measure sums all values in [Sales Amount]. It dynamically adjusts based on filters like year, region, or product.
+
+
+## Lab 2: Conditional Totals
+**Learn**: CALCULATE() with filters  
+**Goal**: Return sales only for 2025.
+
+Sales 2025 = CALCULATE ( SUM ( Sales[Sales Amount] ), Sales[Year] = 2025 )
+
+🔎 Explanation:  
+CALCULATE changes the filter context—here it restricts totals to the year 2025.
+
+
+## Lab 3: Querying with EVALUATE
+**Learn**: FILTER() with queries  
+**Goal**: Return products with low stock, sorted alphabetically.
+
+```DAX
+EVALUATE
+    FILTER ( DimProduct, DimProduct[SafetyStockLevel] < 200 )
+ORDER BY DimProduct[EnglishProductName] ASC
+```
+
+🔎 Explanation:  
+FILTER extracts only products where stock is under 200.  
+ORDER BY sorts them alphabetically.  
+EVALUATE outputs the result (run in DAX Studio).
+
+
+## Lab 4: Variables & Return Logic
+**Learn**: VAR and RETURN  
+**Goal**: Apply discounts or penalties depending on total quantity.
+
+```DAX
+VAR TotalQty = SUM ( Sales[Quantity] )
+RETURN
+    IF (
+        TotalQty > 1000,
+        TotalQty * 0.95,
+        TotalQty * 1.25
+    )
+```
+
+🔎 Explanation:  
+VAR stores values, RETURN outputs logic.  
+If total > 1000 → 5% discount. Otherwise → 25% markup.
+
+
+## Lab 5: Time Intelligence
+**Learn**: TOTALYTD()  
+**Goal**: Show cumulative sales year-to-date.
+
+```DAX
+YTD Sales = TOTALYTD ( SUM ( Sales[Sales Amount] ), 'Date'[Date] )
+```
+
+🔎 Explanation:  
+TOTALYTD aggregates sales from the start of the year to the current date in context.
+
+---
+
+## Wrap-Up
+DAX is more than formulas—it’s a **framework for analytics**.  
+With these 5 labs, you’ve learned how to:  
+- Aggregate values with SUM  
+- Control filter context with CALCULATE  
+- Query and filter tables with EVALUATE  
+- Simplify logic using VAR and RETURN  
+- Apply time intelligence with TOTALYTD  
+
+👉 Next step: Try combining these concepts to calculate **Year-to-Date Sales by Region**, then compare it to last year using SAMEPERIODLASTYEAR.  
+
+<div class="flex justify-center gap-3 my-4"> 
+  <a href="https://dax.guide/" target="_blank"> 
+    <img src="/static/images/deploy.png" alt="Learn DAX" class="w-[118px] h-[33px] object-contain hover:scale-105 transition-transform" /> 
+  </a> 
+  <a href="https://learn.microsoft.com/en-us/dax/dax-overview" target="_blank"> 
+    <img src="/static/images/ebook.png" alt="DAX Docs" class="w-[156px] h-[33px] object-contain hover:scale-105 transition-transform" /> 
+  </a> 
+</div>
