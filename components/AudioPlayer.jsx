@@ -1,4 +1,6 @@
-// components/AudioPlayer.js
+// components/AudioPlayer.jsx
+'use client'
+
 import React, { useState, useRef, useEffect } from 'react'
 
 const AudioPlayer = () => {
