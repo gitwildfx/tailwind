@@ -43,26 +43,26 @@ const AudioMsrPlayer = () => {
   if (!isClient) return null
 
   return (
-    <div className="max-w-md mx-auto p-4">
+    <div className="mx-auto max-w-md p-4">
       <audio
         ref={audioMsrRef}
         controls
         src={playlist[currentTrack].src}
         onEnded={playNext}
-        className="w-full mb-3"
+        className="mb-3 w-full"
       >
         <track kind="captions" src="" label="English captions" />
       </audio>
 
-      <div className="max-h-80 overflow-y-auto border border-gray-300 rounded-lg p-2 bg-white shadow">
+      <div className="max-h-80 overflow-y-auto rounded-lg border border-gray-300 bg-white p-2 shadow">
         {playlist.map((track, index) => (
           <button
             key={index}
             onClick={() => setCurrentTrack(index)}
-            className={`block w-full text-left px-3 py-2 rounded-md transition ${
+            className={`block w-full rounded-md px-3 py-2 text-left transition ${
               index === currentTrack
-                ? 'bg-blue-600 text-white font-semibold'
-                : 'hover:bg-gray-100 text-gray-800'
+                ? 'bg-blue-600 font-semibold text-white'
+                : 'text-gray-800 hover:bg-gray-100'
             }`}
           >
             {track.title}
