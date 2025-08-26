@@ -22,13 +22,19 @@ const layouts = {
   PostBanner,
 }
 
-// Add AudioPlayer to the MDX components mapping
+// Add AudioPlayer to MDX components
 const components = {
   ...baseComponents,
   AudioPlayer,
 }
 
-export async function generateMetadata(props: { params: Promise<{ slug: string[] }> }): Promise<Metadata | undefined> {
+export async function generateMetadata(
+  props: {
+    params: Promise<{
+      slug: string[]
+    }>
+  }
+): Promise<Metadata | undefined> {
   const params = await props.params
   const slug = decodeURI(params.slug.join('/'))
   const post = allBlogs.find((p) => p.slug === slug)
@@ -44,7 +50,8 @@ export async function generateMetadata(props: { params: Promise<{ slug: string[]
   const modifiedAt = new Date(post.lastmod || post.date).toISOString()
   const authors = authorDetails.map((author) => author.name)
   let imageList = [siteMetadata.socialBanner]
-  if (post.images) imageList = typeof post.images === 'string' ? [post.images] : post.images
+  if (post.images)
+    imageList = typeof post.images === 'string' ? [post.images] : post.images
 
   const ogImages = imageList.map((img) => ({
     url: img.includes('http') ? img : siteMetadata.siteUrl + img,
@@ -75,10 +82,18 @@ export async function generateMetadata(props: { params: Promise<{ slug: string[]
 }
 
 export const generateStaticParams = async () => {
-  return allBlogs.map((p) => ({ slug: p.slug.split('/').map((name) => decodeURI(name)) }))
+  return allBlogs.map((p) => ({
+    slug: p.slug.split('/').map((name) => decodeURI(name)),
+  }))
 }
 
-export default async function Page(props: { params: Promise<{ slug: string[] }> }) {
+export default async function Page(
+  props: {
+    params: Promise<{
+      slug: string[]
+    }>
+  }
+) {
   const params = await props.params
   const slug = decodeURI(params.slug.join('/'))
   const sortedCoreContents = allCoreContent(sortPosts(allBlogs))
@@ -97,13 +112,19 @@ export default async function Page(props: { params: Promise<{ slug: string[] }> 
 
   const mainContent = coreContent(post)
   const jsonLd = { ...post.structuredData }
-  jsonLd['author'] = authorDetails.map((author) => ({ '@type': 'Person', name: author.name }))
+  jsonLd['author'] = authorDetails.map((author) => ({
+    '@type': 'Person',
+    name: author.name,
+  }))
 
   const Layout = layouts[post.layout || defaultLayout]
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Layout content={mainContent} authorDetails={authorDetails} next={next} prev={prev}>
         <MDXLayoutRenderer code={post.body.code} components={components} toc={post.toc} />
       </Layout>
