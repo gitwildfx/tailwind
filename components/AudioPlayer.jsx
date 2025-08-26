@@ -49,10 +49,16 @@ export default function AudioPlayer() {
           <button
             key={index}
             onClick={() => setCurrentTrack(index)}
-            className={`block w-full rounded-md px-3 py-2 text-left transition ${
+            className={`block w-full rounded-md px-3 py-2 text-left transition mb-1 ${
               index === currentTrack
                 ? 'bg-blue-600 font-semibold text-white'
                 : 'text-gray-800 hover:bg-gray-100'
             }`}
           >
-            {
+            {track.title}
+          </button>
+        ))}
+      </div>
+    </div>
+  )
+}
