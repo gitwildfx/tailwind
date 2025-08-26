@@ -6,13 +6,15 @@ draft: false
 summary: "Letters to a Fatherless Generation — an audiobook of hope and redemption."
 ---
 
-<div style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+import AudioPlayer from '@site/components/AudioPlayer';
+
+<div className="flex flex-col items-center space-y-4 text-center">
   <img 
     src="/images/msr_full.png" 
-    alt="My Son Rising" 
-    style={{ maxWidth: '100%' }}
+    alt="My Son Rising Cover" 
+    className="max-w-full rounded-lg shadow-lg"
   />
-  <p>Cover Art — My Son Rising</p>
+  <p className="text-sm text-gray-600">Cover Art — My Son Rising</p>
 </div>
 
 ### My Son Rising
@@ -23,10 +25,6 @@ summary: "Letters to a Fatherless Generation — an audiobook of hope and redemp
 
 ## 🎧 Listen Now
 
-import AudioPlayer from '../../components/AudioPlayer';
-
-<div style={{ display: "flex", alignItems: "center", justifyContent: "flex-start" }}>
-  <div style={{ textAlign: "left" }}>
-    <AudioPlayer />
-  </div>
+<div className="flex flex-col items-start mt-4">
+  <AudioPlayer />
 </div>
