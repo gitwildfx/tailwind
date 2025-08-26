@@ -6,10 +6,6 @@ draft: false
 summary: "Letters to a Fatherless Generation — an audiobook of hope and redemption."
 ---
 
-import dynamic from 'next/dynamic'
-
-const AudioPlayer = dynamic(() => import('@/components/AudioPlayer.jsx'), { ssr: false })
-
 <div className="flex flex-col items-center space-y-4 text-center">
   <img 
     src="/images/msr_full.png" 
@@ -27,6 +23,4 @@ const AudioPlayer = dynamic(() => import('@/components/AudioPlayer.jsx'), { ssr:
 
 ## 🎧 Listen Now
 
-<div className="flex flex-col items-start mt-4">
-  <AudioPlayer />
-</div>
+<div id="audio-player-placeholder" className="flex flex-col items-start mt-4"></div>
