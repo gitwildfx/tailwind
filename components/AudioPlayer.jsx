@@ -1,11 +1,13 @@
-// components/AudioPlayer.jsx
-'use client' // ← important for hooks to work in App Router
-
-import { useState, useRef, useEffect } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 
 const AudioPlayer = () => {
+  const [isClient, setIsClient] = useState(false)
   const [currentTrack, setCurrentTrack] = useState(0)
   const audioRef = useRef(null)
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
 
   const playlist = [
     { title: 'Opening Credits', src: '/static/audio/msr/1.Opening Credits.mp3' },
@@ -28,15 +30,13 @@ const AudioPlayer = () => {
     { title: 'Closing Credits', src: '/static/audio/msr/Closing Credits.mp3' },
   ]
 
-  const playNext = () => {
-    setCurrentTrack((prev) => (prev + 1) % playlist.length)
-  }
+  const playNext = () => setCurrentTrack((prev) => (prev + 1) % playlist.length)
 
   useEffect(() => {
-    if (audioRef.current) {
-      audioRef.current.play().catch(() => {})
-    }
+    if (audioRef.current) audioRef.current.play().catch(() => {})
   }, [currentTrack])
+
+  if (!isClient) return null
 
   return (
     <div className="mx-auto max-w-md p-4">
