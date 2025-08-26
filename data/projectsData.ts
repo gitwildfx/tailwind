@@ -26,12 +26,12 @@ const projectsData: Project[] = [
     imgSrc: '/static/images/githack2.png',
     href: '/blog/hack-this-page', // relative URL
   },
-  {
-    title: '"My Son Rising" (Audiobook)',
-    description: `A message of hope and redemption for wandering souls desperate to know true freedom. Reclaim your rightful purpose as spiritual sons, and discover timeless wisdom and healing found within these letters.`,
-    imgSrc: '/static/images/sun.png',
-    href: '/blog/my-son-rising', // external URL
-  },
+ // {
+ //   title: '"My Son Rising" (Audiobook)',
+ //   description: `A message of hope and redemption for wandering souls desperate to know true freedom. Reclaim your rightful purpose as spiritual sons, and discover timeless wisdom and healing found within these letters.`,
+ //   imgSrc: '/static/images/sun.png',
+ //   href: '/blog/my-son-rising', // external URL
+ // },
 ]
 
 export default projectsData;
