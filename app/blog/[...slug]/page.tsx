@@ -2,7 +2,7 @@ import 'css/prism.css'
 import 'katex/dist/katex.css'
 
 import PageTitle from '@/components/PageTitle'
-import { components as baseComponents } from '@/components/MDXComponents'
+import { components } from '@/components/MDXComponents'
 import { MDXLayoutRenderer } from 'pliny/mdx-components'
 import { sortPosts, coreContent, allCoreContent } from 'pliny/utils/contentlayer'
 import { allBlogs, allAuthors } from 'contentlayer/generated'
@@ -10,7 +10,6 @@ import type { Authors, Blog } from 'contentlayer/generated'
 import PostSimple from '@/layouts/PostSimple'
 import PostLayout from '@/layouts/PostLayout'
 import PostBanner from '@/layouts/PostBanner'
-import AudioPlayer from '@/components/AudioPlayer'
 import { Metadata } from 'next'
 import siteMetadata from '@/data/siteMetadata'
 import { notFound } from 'next/navigation'
@@ -22,40 +21,33 @@ const layouts = {
   PostBanner,
 }
 
-// Add AudioPlayer to MDX components
-const components = {
-  ...baseComponents,
-  AudioPlayer,
-}
-
-export async function generateMetadata(
-  props: {
-    params: Promise<{
-      slug: string[]
-    }>
-  }
-): Promise<Metadata | undefined> {
+export async function generateMetadata(props: {
+  params: Promise<{ slug: string[] }>
+}): Promise<Metadata | undefined> {
   const params = await props.params
   const slug = decodeURI(params.slug.join('/'))
   const post = allBlogs.find((p) => p.slug === slug)
-  if (!post) return
-
-  const authorList = post.authors || ['default']
+  const authorList = post?.authors || ['default']
   const authorDetails = authorList.map((author) => {
     const authorResults = allAuthors.find((p) => p.slug === author)
     return coreContent(authorResults as Authors)
   })
+  if (!post) {
+    return
+  }
 
   const publishedAt = new Date(post.date).toISOString()
   const modifiedAt = new Date(post.lastmod || post.date).toISOString()
   const authors = authorDetails.map((author) => author.name)
   let imageList = [siteMetadata.socialBanner]
-  if (post.images)
+  if (post.images) {
     imageList = typeof post.images === 'string' ? [post.images] : post.images
-
-  const ogImages = imageList.map((img) => ({
-    url: img.includes('http') ? img : siteMetadata.siteUrl + img,
-  }))
+  }
+  const ogImages = imageList.map((img) => {
+    return {
+      url: img.includes('http') ? img : siteMetadata.siteUrl + img,
+    }
+  })
 
   return {
     title: post.title,
@@ -82,40 +74,35 @@ export async function generateMetadata(
 }
 
 export const generateStaticParams = async () => {
-  return allBlogs.map((p) => ({
-    slug: p.slug.split('/').map((name) => decodeURI(name)),
-  }))
+  return allBlogs.map((p) => ({ slug: p.slug.split('/').map((name) => decodeURI(name)) }))
 }
 
-export default async function Page(
-  props: {
-    params: Promise<{
-      slug: string[]
-    }>
-  }
-) {
+export default async function Page(props: { params: Promise<{ slug: string[] }> }) {
   const params = await props.params
   const slug = decodeURI(params.slug.join('/'))
+  // Filter out drafts in production
   const sortedCoreContents = allCoreContent(sortPosts(allBlogs))
   const postIndex = sortedCoreContents.findIndex((p) => p.slug === slug)
-  if (postIndex === -1) return notFound()
+  if (postIndex === -1) {
+    return notFound()
+  }
 
   const prev = sortedCoreContents[postIndex + 1]
   const next = sortedCoreContents[postIndex - 1]
   const post = allBlogs.find((p) => p.slug === slug) as Blog
-
   const authorList = post?.authors || ['default']
   const authorDetails = authorList.map((author) => {
     const authorResults = allAuthors.find((p) => p.slug === author)
     return coreContent(authorResults as Authors)
   })
-
   const mainContent = coreContent(post)
-  const jsonLd = { ...post.structuredData }
-  jsonLd['author'] = authorDetails.map((author) => ({
-    '@type': 'Person',
-    name: author.name,
-  }))
+  const jsonLd = post.structuredData
+  jsonLd['author'] = authorDetails.map((author) => {
+    return {
+      '@type': 'Person',
+      name: author.name,
+    }
+  })
 
   const Layout = layouts[post.layout || defaultLayout]
 
