@@ -31,7 +31,7 @@ const AudioMsrPlayer = () => {
   ]
 
   const playNext = () => {
-    setCurrentTrack(prev => (prev + 1) % playlist.length)
+    setCurrentTrack((prev) => (prev + 1) % playlist.length)
   }
 
   useEffect(() => {
@@ -40,48 +40,30 @@ const AudioMsrPlayer = () => {
     }
   }, [currentTrack])
 
-  if (!isClient) {
-    return null
-  }
+  if (!isClient) return null
 
   return (
-    <div style={{ textAlign: 'left', padding: '20px', maxWidth: '400px', margin: 'auto' }}>
+    <div className="max-w-md mx-auto p-4">
       <audio
         ref={audioMsrRef}
         controls
         src={playlist[currentTrack].src}
         onEnded={playNext}
-        style={{ width: '100%', marginBottom: '10px' }}
+        className="w-full mb-3"
       >
-        <track kind='captions' src='' label='English captions' />
+        <track kind="captions" src="" label="English captions" />
       </audio>
 
-      <div
-        style={{
-          maxHeight: '350px',
-          overflowY: 'auto',
-          border: '1px solid #ccc',
-          padding: '10px',
-          borderRadius: '5px',
-          background: '#fff',
-        }}
-      >
+      <div className="max-h-80 overflow-y-auto border border-gray-300 rounded-lg p-2 bg-white shadow">
         {playlist.map((track, index) => (
           <button
             key={index}
             onClick={() => setCurrentTrack(index)}
-            style={{
-              display: 'block',
-              width: '100%',
-              textAlign: 'left',
-              padding: '10px',
-              margin: '5px 0',
-              cursor: 'pointer',
-              background: index === currentTrack ? '#000' : '#fff',
-              color: index === currentTrack ? '#fff' : '#000',
-              border: 'none',
-              borderRadius: '5px',
-            }}
+            className={`block w-full text-left px-3 py-2 rounded-md transition ${
+              index === currentTrack
+                ? 'bg-blue-600 text-white font-semibold'
+                : 'hover:bg-gray-100 text-gray-800'
+            }`}
           >
             {track.title}
           </button>
