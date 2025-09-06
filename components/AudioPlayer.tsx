@@ -53,7 +53,7 @@ export default function AudioPlayer({ src, title }: AudioPlayerProps) {
 
         <div className="h-2 flex-1 overflow-hidden rounded-full bg-gray-300">
           <div
-            className="rounded-full bg-blue-600 h-2 transition-all"
+            className="h-2 rounded-full bg-blue-600 transition-all"
             style={{ width: `${progress}%` }}
           />
         </div>
