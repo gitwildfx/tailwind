@@ -1,3 +1,5 @@
+'use client' // Only for client components; do NOT put this at the top of this page. Keep this page as a server component.
+
 import 'css/prism.css'
 import 'katex/dist/katex.css'
 
@@ -13,6 +15,18 @@ import PostBanner from '@/layouts/PostBanner'
 import { Metadata } from 'next'
 import siteMetadata from '@/data/siteMetadata'
 import { notFound } from 'next/navigation'
+import dynamic from 'next/dynamic'
+
+// Dynamically import AudioPlayerWrapper as client-only
+const AudioPlayerWrapper = dynamic(() => import('@/components/AudioPlayerWrapper'), {
+  ssr: false,
+})
+
+// Example playlist
+const playlist = [
+  { title: 'Track 1', src: '/audio/track1.mp3' },
+  { title: 'Track 2', src: '/audio/track2.mp3' },
+]
 
 const defaultLayout = 'PostLayout'
 const layouts = {
@@ -27,14 +41,13 @@ export async function generateMetadata(props: {
   const params = await props.params
   const slug = decodeURI(params.slug.join('/'))
   const post = allBlogs.find((p) => p.slug === slug)
+  if (!post) return
+
   const authorList = post?.authors || ['default']
   const authorDetails = authorList.map((author) => {
     const authorResults = allAuthors.find((p) => p.slug === author)
     return coreContent(authorResults as Authors)
   })
-  if (!post) {
-    return
-  }
 
   const publishedAt = new Date(post.date).toISOString()
   const modifiedAt = new Date(post.lastmod || post.date).toISOString()
@@ -43,11 +56,9 @@ export async function generateMetadata(props: {
   if (post.images) {
     imageList = typeof post.images === 'string' ? [post.images] : post.images
   }
-  const ogImages = imageList.map((img) => {
-    return {
-      url: img.includes('http') ? img : siteMetadata.siteUrl + img,
-    }
-  })
+  const ogImages = imageList.map((img) => ({
+    url: img.includes('http') ? img : siteMetadata.siteUrl + img,
+  }))
 
   return {
     title: post.title,
@@ -80,12 +91,9 @@ export const generateStaticParams = async () => {
 export default async function Page(props: { params: Promise<{ slug: string[] }> }) {
   const params = await props.params
   const slug = decodeURI(params.slug.join('/'))
-  // Filter out drafts in production
   const sortedCoreContents = allCoreContent(sortPosts(allBlogs))
   const postIndex = sortedCoreContents.findIndex((p) => p.slug === slug)
-  if (postIndex === -1) {
-    return notFound()
-  }
+  if (postIndex === -1) return notFound()
 
   const prev = sortedCoreContents[postIndex + 1]
   const next = sortedCoreContents[postIndex - 1]
@@ -97,12 +105,7 @@ export default async function Page(props: { params: Promise<{ slug: string[] }> 
   })
   const mainContent = coreContent(post)
   const jsonLd = post.structuredData
-  jsonLd['author'] = authorDetails.map((author) => {
-    return {
-      '@type': 'Person',
-      name: author.name,
-    }
-  })
+  jsonLd['author'] = authorDetails.map((author) => ({ '@type': 'Person', name: author.name }))
 
   const Layout = layouts[post.layout || defaultLayout]
 
@@ -114,6 +117,9 @@ export default async function Page(props: { params: Promise<{ slug: string[] }> 
       />
       <Layout content={mainContent} authorDetails={authorDetails} next={next} prev={prev}>
         <MDXLayoutRenderer code={post.body.code} components={components} toc={post.toc} />
+
+        {/* Client-only audio player */}
+        <AudioPlayerWrapper playlist={playlist} />
       </Layout>
     </>
   )
