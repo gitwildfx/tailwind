@@ -40,23 +40,28 @@ export default function AudioPlayer({ src, title }: AudioPlayerProps) {
   }, [])
 
   return (
-    <div className="flex flex-col w-full max-w-lg p-4 bg-gray-100 rounded-lg shadow-md">
+    <div className="w-full max-w-lg flex-col rounded-lg bg-gray-100 p-4 shadow-md">
       {title && <h3 className="mb-2 text-lg font-semibold text-gray-800">{title}</h3>}
+
       <div className="flex items-center space-x-4">
         <button
           onClick={togglePlay}
-          className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
+          className="rounded-md bg-blue-600 px-4 py-2 text-white transition-colors hover:bg-blue-700"
         >
           {playing ? 'Pause' : 'Play'}
         </button>
-        <div className="flex-1 h-2 bg-gray-300 rounded-full overflow-hidden">
+
+        <div className="h-2 flex-1 overflow-hidden rounded-full bg-gray-300">
           <div
-            className="h-2 bg-blue-600 rounded-full transition-all"
+            className="rounded-full bg-blue-600 h-2 transition-all"
             style={{ width: `${progress}%` }}
-          ></div>
+          />
         </div>
       </div>
-      <audio ref={audioRef} src={src} className="hidden" />
+
+      <audio ref={audioRef} src={src} className="hidden" controls>
+        <track kind="captions" />
+      </audio>
     </div>
   )
 }
