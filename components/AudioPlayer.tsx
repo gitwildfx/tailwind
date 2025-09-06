@@ -2,62 +2,61 @@
 
 import { useState, useRef, useEffect } from 'react'
 
-interface Track {
-  title: string
-  src: string
-}
-
 interface AudioPlayerProps {
-  playlist?: Track[]
+  src: string
+  title?: string
 }
 
-export default function AudioPlayer({ playlist }: AudioPlayerProps) {
-  const defaultPlaylist: Track[] = [
-    { title: 'Opening Credits', src: '/static/audio/msr/1.Opening Credits.mp3' },
-    { title: 'Introduction', src: '/static/audio/msr/2.Introduction.mp3' },
-    { title: 'Chapter 1 - Love', src: '/static/audio/msr/Chapter 1 - Love.mp3' },
-    { title: 'Chapter 2 - Strength', src: '/static/audio/msr/Chapter 2 - Strength.mp3' },
-    { title: 'Closing Credits', src: '/static/audio/msr/Closing Credits.mp3' },
-  ]
-
-  const tracks = playlist || defaultPlaylist
-  const [currentTrack, setCurrentTrack] = useState(0)
+export default function AudioPlayer({ src, title }: AudioPlayerProps) {
+  const [playing, setPlaying] = useState(false)
+  const [progress, setProgress] = useState(0)
   const audioRef = useRef<HTMLAudioElement>(null)
 
-  const playNext = () => setCurrentTrack((prev) => (prev + 1) % tracks.length)
+  const togglePlay = () => {
+    if (!audioRef.current) return
+    if (playing) {
+      audioRef.current.pause()
+    } else {
+      audioRef.current.play()
+    }
+    setPlaying(!playing)
+  }
+
+  const handleTimeUpdate = () => {
+    if (!audioRef.current) return
+    setProgress((audioRef.current.currentTime / audioRef.current.duration) * 100)
+  }
 
   useEffect(() => {
-    if (audioRef.current) {
-      audioRef.current.play().catch(() => {})
+    const audio = audioRef.current
+    if (!audio) return
+
+    audio.addEventListener('timeupdate', handleTimeUpdate)
+    audio.addEventListener('ended', () => setPlaying(false))
+
+    return () => {
+      audio.removeEventListener('timeupdate', handleTimeUpdate)
     }
-  }, [currentTrack])
+  }, [])
 
   return (
-    <div className="mx-auto max-w-md p-4">
-      <audio
-        ref={audioRef}
-        controls
-        src={tracks[currentTrack].src}
-        onEnded={playNext}
-        className="mb-3 w-full"
-      >
-        <track kind="captions" src="" />
-      </audio>
-      <div className="max-h-80 overflow-y-auto rounded-lg border border-gray-300 bg-white p-2 shadow">
-        {tracks.map((track, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentTrack(index)}
-            className={`block w-full rounded-md px-3 py-2 text-left transition ${
-              index === currentTrack
-                ? 'bg-blue-600 font-semibold text-white'
-                : 'text-gray-800 hover:bg-gray-100'
-            }`}
-          >
-            {track.title}
-          </button>
-        ))}
+    <div className="flex flex-col w-full max-w-lg p-4 bg-gray-100 rounded-lg shadow-md">
+      {title && <h3 className="mb-2 text-lg font-semibold text-gray-800">{title}</h3>}
+      <div className="flex items-center space-x-4">
+        <button
+          onClick={togglePlay}
+          className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
+        >
+          {playing ? 'Pause' : 'Play'}
+        </button>
+        <div className="flex-1 h-2 bg-gray-300 rounded-full overflow-hidden">
+          <div
+            className="h-2 bg-blue-600 rounded-full transition-all"
+            style={{ width: `${progress}%` }}
+          ></div>
+        </div>
       </div>
+      <audio ref={audioRef} src={src} className="hidden" />
     </div>
   )
 }
