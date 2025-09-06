@@ -22,10 +22,14 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['var(--font-space-grotesk)', ...fontFamily.sans],
+        // Use Rubik instead of Space Grotesk
+        sans: ['var(--font-rubik)', ...fontFamily.sans],
       },
       colors: {
-        primary: colors.yellow,
+        // Custom brand color instead of Tailwind yellow
+        primary: {
+          DEFAULT: '#b03d56',
+        },
         gray: colors.gray,
         novel: {
           background: '#282828',
@@ -45,11 +49,12 @@ module.exports = {
         DEFAULT: {
           css: {
             a: {
-              color: theme('colors.primary.500'),
+              color: theme('colors.primary.DEFAULT'),
               '&:hover': {
-                color: `${theme('colors.primary.600')}`,
+                color: theme('colors.primary.DEFAULT'),
+                opacity: 0.85,
               },
-              code: { color: theme('colors.primary.400') },
+              code: { color: theme('colors.primary.DEFAULT') },
             },
             'h1,h2': {
               fontWeight: '700',
@@ -66,11 +71,12 @@ module.exports = {
         invert: {
           css: {
             a: {
-              color: theme('colors.primary.500'),
+              color: theme('colors.primary.DEFAULT'),
               '&:hover': {
-                color: `${theme('colors.primary.400')}`,
+                color: theme('colors.primary.DEFAULT'),
+                opacity: 0.85,
               },
-              code: { color: theme('colors.primary.400') },
+              code: { color: theme('colors.primary.DEFAULT') },
             },
             'h1,h2,h3,h4,h5,h6': {
               color: theme('colors.gray.100'),
