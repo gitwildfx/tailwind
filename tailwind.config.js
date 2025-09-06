@@ -22,7 +22,7 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['var(--font-rubik)', ...fontFamily.sans],
+        sans: ['var(--space-grotesk)', ...fontFamily.sans],
       },
       colors: {
         primary: colors.rose,
@@ -47,7 +47,7 @@ module.exports = {
             a: {
               color: theme('colors.primary.500'),
               '&:hover': {
-                color: `${theme('colors.primary.600')}`,
+                color: `${theme('colors.primary.800')}`, // updated from 600 → 800
               },
               code: { color: theme('colors.primary.400') },
             },
@@ -68,7 +68,7 @@ module.exports = {
             a: {
               color: theme('colors.primary.500'),
               '&:hover': {
-                color: `${theme('colors.primary.400')}`,
+                color: `${theme('colors.primary.800')}`, // updated from 400 → 800
               },
               code: { color: theme('colors.primary.400') },
             },
