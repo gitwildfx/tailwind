@@ -22,10 +22,11 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
+        // ORIGINAL WORKING FONT SETUP
         sans: ['var(--font-space-grotesk)', ...fontFamily.sans],
       },
       colors: {
-        primary: colors.rose,
+        primary: colors.red, // main color palette
         gray: colors.gray,
         novel: {
           background: '#282828',
@@ -47,7 +48,7 @@ module.exports = {
             a: {
               color: theme('colors.primary.500'),
               '&:hover': {
-                color: `${theme('colors.primary.950')}`, // updated hover
+                color: `${theme('colors.primary.800')}`, // red-800 hover
               },
               code: { color: theme('colors.primary.400') },
             },
@@ -68,7 +69,7 @@ module.exports = {
             a: {
               color: theme('colors.primary.500'),
               '&:hover': {
-                color: `${theme('colors.primary.950')}`, // updated hover
+                color: `${theme('colors.primary.800')}`, // red-800 hover
               },
               code: { color: theme('colors.primary.400') },
             },
