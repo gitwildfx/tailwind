@@ -8,14 +8,23 @@ interface Track {
 }
 
 interface AudioPlayerProps {
-  playlist: Track[]
+  playlist?: Track[]
 }
 
 export default function AudioPlayer({ playlist }: AudioPlayerProps) {
+  const defaultPlaylist: Track[] = [
+    { title: 'Opening Credits', src: '/static/audio/msr/1.Opening Credits.mp3' },
+    { title: 'Introduction', src: '/static/audio/msr/2.Introduction.mp3' },
+    { title: 'Chapter 1 - Love', src: '/static/audio/msr/Chapter 1 - Love.mp3' },
+    { title: 'Chapter 2 - Strength', src: '/static/audio/msr/Chapter 2 - Strength.mp3' },
+    { title: 'Closing Credits', src: '/static/audio/msr/Closing Credits.mp3' },
+  ]
+
+  const tracks = playlist || defaultPlaylist
   const [currentTrack, setCurrentTrack] = useState(0)
   const audioRef = useRef<HTMLAudioElement>(null)
 
-  const playNext = () => setCurrentTrack((prev) => (prev + 1) % playlist.length)
+  const playNext = () => setCurrentTrack((prev) => (prev + 1) % tracks.length)
 
   useEffect(() => {
     if (audioRef.current) {
@@ -28,12 +37,14 @@ export default function AudioPlayer({ playlist }: AudioPlayerProps) {
       <audio
         ref={audioRef}
         controls
-        src={playlist[currentTrack].src}
+        src={tracks[currentTrack].src}
         onEnded={playNext}
         className="mb-3 w-full"
-      />
+      >
+        <track kind="captions" src="" />
+      </audio>
       <div className="max-h-80 overflow-y-auto rounded-lg border border-gray-300 bg-white p-2 shadow">
-        {playlist.map((track, index) => (
+        {tracks.map((track, index) => (
           <button
             key={index}
             onClick={() => setCurrentTrack(index)}
