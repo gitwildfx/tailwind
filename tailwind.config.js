@@ -22,14 +22,10 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        // Use Rubik instead of Space Grotesk
         sans: ['var(--font-rubik)', ...fontFamily.sans],
       },
       colors: {
-        // Custom brand color instead of Tailwind yellow
-        primary: {
-          DEFAULT: '#b03d56',
-        },
+        primary: colors.rose,
         gray: colors.gray,
         novel: {
           background: '#282828',
@@ -49,12 +45,11 @@ module.exports = {
         DEFAULT: {
           css: {
             a: {
-              color: theme('colors.primary.DEFAULT'),
+              color: theme('colors.primary.500'),
               '&:hover': {
-                color: theme('colors.primary.DEFAULT'),
-                opacity: 0.85,
+                color: `${theme('colors.primary.600')}`,
               },
-              code: { color: theme('colors.primary.DEFAULT') },
+              code: { color: theme('colors.primary.400') },
             },
             'h1,h2': {
               fontWeight: '700',
@@ -71,12 +66,11 @@ module.exports = {
         invert: {
           css: {
             a: {
-              color: theme('colors.primary.DEFAULT'),
+              color: theme('colors.primary.500'),
               '&:hover': {
-                color: theme('colors.primary.DEFAULT'),
-                opacity: 0.85,
+                color: `${theme('colors.primary.400')}`,
               },
-              code: { color: theme('colors.primary.DEFAULT') },
+              code: { color: theme('colors.primary.400') },
             },
             'h1,h2,h3,h4,h5,h6': {
               color: theme('colors.gray.100'),
