@@ -16,7 +16,7 @@ const projectsData: Project[] = [
   },
   {
     title: 'Docusaurus v2',
-    description: `Build a customized Document repository from the ground up. Employ a live Code Enviornment to design, deploy, and launch your very first website. Plus, you'll learn about dinosaurs...not really.`,
+    description: `Build a customized Document repository from the ground up. Employ a live Code Environment to design, deploy, and launch your very first website. Plus, you'll learn about dinosaurs...not really.`,
     imgSrc: '/static/images/docusaurus.gif',
     href: '/blog/docusaurus/', // relative URL
   },
@@ -26,12 +26,12 @@ const projectsData: Project[] = [
     imgSrc: '/static/images/githack2.png',
     href: '/blog/hack-this-page', // relative URL
   },
- // {
- //   title: '"My Son Rising" (Audiobook)',
- //   description: `A message of hope and redemption for wandering souls desperate to know true freedom. Reclaim your rightful purpose as spiritual sons, and discover timeless wisdom and healing found within these letters.`,
- //   imgSrc: '/static/images/sun.png',
- //   href: '/blog/my-son-rising', // external URL
- // },
+{
+    title: '"My Son Rising" (Audiobook)',
+    description: `A message of hope and redemption for wandering souls desperate to know true freedom. Reclaim your rightful purpose as spiritual sons, and discover timeless wisdom and healing found within these letters.`,
+    imgSrc: '/static/images/sun.png',
+    href: '/blog/my-son-rising', // external URL
+},
 ]
 
 export default projectsData;
