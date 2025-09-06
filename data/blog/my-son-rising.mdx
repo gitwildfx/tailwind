@@ -1,0 +1,37 @@
+---
+title: My Son Rising
+date: '2024-06-05'
+tags: ['audiobook', 'faith', 'fatherhood']
+draft: false
+summary: "Letters to a Fatherless Generation — an audiobook of hope and redemption."
+---
+
+import AudioPlayer from '@/components/AudioPlayer'
+
+<div className="flex flex-col items-center space-y-4 text-center">
+  <img 
+    src="/static/images/msr_full.png" 
+    alt="My Son Rising Cover" 
+    className="max-w-full rounded-lg shadow-lg"
+  />
+  <p className="text-sm text-gray-600">Cover Art — My Son Rising</p>
+</div>
+
+### My Son Rising
+
+*A timeless message of hope and redemption. Reclaim your rightful purpose as spiritual sons, and discover wisdom and healing found within these letters.*
+
+---
+
+## 🎧 Listen Now
+
+<AudioPlayer 
+  playlist={[
+    { title: 'Opening Credits', src: '/static/audio/msr/1.Opening Credits.mp3' },
+    { title: 'Introduction', src: '/static/audio/msr/2.Introduction.mp3' },
+    { title: 'Chapter 1 - Love', src: '/static/audio/msr/Chapter 1 - Love.mp3' },
+    { title: 'Chapter 2 - Strength', src: '/static/audio/msr/Chapter 2 - Strength.mp3' },
+    { title: 'Chapter 3 - Truth', src: '/static/audio/msr/Chapter 3 - Truth.mp3' },
+    { title: 'Closing Credits', src: '/static/audio/msr/Closing Credits.mp3' },
+  ]}
+/>
