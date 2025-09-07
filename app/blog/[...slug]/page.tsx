@@ -13,12 +13,6 @@ import PostBanner from '@/layouts/PostBanner'
 import { Metadata } from 'next'
 import siteMetadata from '@/data/siteMetadata'
 import { notFound } from 'next/navigation'
-import dynamic from 'next/dynamic'
-
-// Client-only audio player
-const AudioPlayerWrapper = dynamic(() => import('@/components/AudioPlayerWrapper'), {
-  ssr: false,
-})
 
 const defaultLayout = 'PostLayout'
 const layouts = {
@@ -27,18 +21,20 @@ const layouts = {
   PostBanner,
 }
 
-// Function to generate metadata for each post
-export async function generateMetadata(props: { params: Promise<{ slug: string[] }> }): Promise<Metadata | undefined> {
+export async function generateMetadata(props: {
+  params: Promise<{ slug: string[] }>
+}): Promise<Metadata | undefined> {
   const params = await props.params
   const slug = decodeURI(params.slug.join('/'))
   const post = allBlogs.find((p) => p.slug === slug)
-  if (!post) return
-
-  const authorList = post.authors || ['default']
+  const authorList = post?.authors || ['default']
   const authorDetails = authorList.map((author) => {
     const authorResults = allAuthors.find((p) => p.slug === author)
     return coreContent(authorResults as Authors)
   })
+  if (!post) {
+    return
+  }
 
   const publishedAt = new Date(post.date).toISOString()
   const modifiedAt = new Date(post.lastmod || post.date).toISOString()
@@ -47,9 +43,11 @@ export async function generateMetadata(props: { params: Promise<{ slug: string[]
   if (post.images) {
     imageList = typeof post.images === 'string' ? [post.images] : post.images
   }
-  const ogImages = imageList.map((img) => ({
-    url: img.includes('http') ? img : siteMetadata.siteUrl + img,
-  }))
+  const ogImages = imageList.map((img) => {
+    return {
+      url: img.includes('http') ? img : siteMetadata.siteUrl + img,
+    }
+  })
 
   return {
     title: post.title,
@@ -75,37 +73,38 @@ export async function generateMetadata(props: { params: Promise<{ slug: string[]
   }
 }
 
-// Generate static paths for all blog posts
 export const generateStaticParams = async () => {
   return allBlogs.map((p) => ({ slug: p.slug.split('/').map((name) => decodeURI(name)) }))
 }
 
-// Server component for the page
 export default async function Page(props: { params: Promise<{ slug: string[] }> }) {
   const params = await props.params
   const slug = decodeURI(params.slug.join('/'))
+  // Filter out drafts in production
   const sortedCoreContents = allCoreContent(sortPosts(allBlogs))
   const postIndex = sortedCoreContents.findIndex((p) => p.slug === slug)
-  if (postIndex === -1) return notFound()
+  if (postIndex === -1) {
+    return notFound()
+  }
 
   const prev = sortedCoreContents[postIndex + 1]
   const next = sortedCoreContents[postIndex - 1]
   const post = allBlogs.find((p) => p.slug === slug) as Blog
-  const authorList = post.authors || ['default']
+  const authorList = post?.authors || ['default']
   const authorDetails = authorList.map((author) => {
     const authorResults = allAuthors.find((p) => p.slug === author)
     return coreContent(authorResults as Authors)
   })
   const mainContent = coreContent(post)
-
-  // Structured data (JSON-LD)
   const jsonLd = post.structuredData
-  jsonLd['author'] = authorDetails.map((author) => ({ '@type': 'Person', name: author.name }))
+  jsonLd['author'] = authorDetails.map((author) => {
+    return {
+      '@type': 'Person',
+      name: author.name,
+    }
+  })
 
   const Layout = layouts[post.layout || defaultLayout]
-
-  // Dynamic playlist per post (example: post.audioTracks)
-  const playlist = post.audioTracks || [] // make sure your MDX/frontmatter has `audioTracks` array [{title, src}]
 
   return (
     <>
@@ -115,9 +114,6 @@ export default async function Page(props: { params: Promise<{ slug: string[] }> 
       />
       <Layout content={mainContent} authorDetails={authorDetails} next={next} prev={prev}>
         <MDXLayoutRenderer code={post.body.code} components={components} toc={post.toc} />
-
-        {/* Client-only audio player */}
-        {playlist.length > 0 && <AudioPlayerWrapper playlist={playlist} />}
       </Layout>
     </>
   )
