@@ -11,7 +11,7 @@ import BlogNewsletterForm from 'pliny/ui/BlogNewsletterForm'
 import Image from './Image'
 import CustomLink from './Link'
 import TableWrapper from './TableWrapper'
-import AudioPlayer from '@/components/HomepageFeatures/AudioPlayer'
+import AudioPlayer from '@/components/AudioPlayer'
 
 /**
  * MDXComponents provides custom React components
