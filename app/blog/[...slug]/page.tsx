@@ -1,5 +1,3 @@
-'use client' // Only for client components; do NOT put this at the top of this page. Keep this page as a server component.
-
 import 'css/prism.css'
 import 'katex/dist/katex.css'
 
@@ -17,16 +15,10 @@ import siteMetadata from '@/data/siteMetadata'
 import { notFound } from 'next/navigation'
 import dynamic from 'next/dynamic'
 
-// Dynamically import AudioPlayerWrapper as client-only
+// Client-only audio player
 const AudioPlayerWrapper = dynamic(() => import('@/components/AudioPlayerWrapper'), {
   ssr: false,
 })
-
-// Example playlist
-const playlist = [
-  { title: 'Track 1', src: '/audio/track1.mp3' },
-  { title: 'Track 2', src: '/audio/track2.mp3' },
-]
 
 const defaultLayout = 'PostLayout'
 const layouts = {
@@ -35,15 +27,14 @@ const layouts = {
   PostBanner,
 }
 
-export async function generateMetadata(props: {
-  params: Promise<{ slug: string[] }>
-}): Promise<Metadata | undefined> {
+// Function to generate metadata for each post
+export async function generateMetadata(props: { params: Promise<{ slug: string[] }> }): Promise<Metadata | undefined> {
   const params = await props.params
   const slug = decodeURI(params.slug.join('/'))
   const post = allBlogs.find((p) => p.slug === slug)
   if (!post) return
 
-  const authorList = post?.authors || ['default']
+  const authorList = post.authors || ['default']
   const authorDetails = authorList.map((author) => {
     const authorResults = allAuthors.find((p) => p.slug === author)
     return coreContent(authorResults as Authors)
@@ -84,10 +75,12 @@ export async function generateMetadata(props: {
   }
 }
 
+// Generate static paths for all blog posts
 export const generateStaticParams = async () => {
   return allBlogs.map((p) => ({ slug: p.slug.split('/').map((name) => decodeURI(name)) }))
 }
 
+// Server component for the page
 export default async function Page(props: { params: Promise<{ slug: string[] }> }) {
   const params = await props.params
   const slug = decodeURI(params.slug.join('/'))
@@ -98,16 +91,21 @@ export default async function Page(props: { params: Promise<{ slug: string[] }> 
   const prev = sortedCoreContents[postIndex + 1]
   const next = sortedCoreContents[postIndex - 1]
   const post = allBlogs.find((p) => p.slug === slug) as Blog
-  const authorList = post?.authors || ['default']
+  const authorList = post.authors || ['default']
   const authorDetails = authorList.map((author) => {
     const authorResults = allAuthors.find((p) => p.slug === author)
     return coreContent(authorResults as Authors)
   })
   const mainContent = coreContent(post)
+
+  // Structured data (JSON-LD)
   const jsonLd = post.structuredData
   jsonLd['author'] = authorDetails.map((author) => ({ '@type': 'Person', name: author.name }))
 
   const Layout = layouts[post.layout || defaultLayout]
+
+  // Dynamic playlist per post (example: post.audioTracks)
+  const playlist = post.audioTracks || [] // make sure your MDX/frontmatter has `audioTracks` array [{title, src}]
 
   return (
     <>
@@ -119,7 +117,7 @@ export default async function Page(props: { params: Promise<{ slug: string[] }> 
         <MDXLayoutRenderer code={post.body.code} components={components} toc={post.toc} />
 
         {/* Client-only audio player */}
-        <AudioPlayerWrapper playlist={playlist} />
+        {playlist.length > 0 && <AudioPlayerWrapper playlist={playlist} />}
       </Layout>
     </>
   )
