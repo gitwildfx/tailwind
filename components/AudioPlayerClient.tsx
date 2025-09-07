@@ -1,5 +1,7 @@
 'use client'
+
 import { useState } from 'react'
+import AudioPlayer from './AudioPlayer'
 
 interface Track {
   title: string
@@ -13,18 +15,17 @@ interface AudioPlayerClientProps {
 export default function AudioPlayerClient({ playlist }: AudioPlayerClientProps) {
   const [current, setCurrent] = useState(0)
 
-  const nextTrack = () => setCurrent((prev) => (prev + 1) % playlist.length)
-
-  if (!playlist || playlist.length === 0) return null
+  const nextTrack = () => {
+    setCurrent((prev) => (prev + 1) % playlist.length)
+  }
 
   return (
     <div className="flex flex-col space-y-4">
-      {/* Audio element for current track */}
-      <audio key={current} controls className="w-full">
-        <source src={playlist[current].src} type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-
+      <AudioPlayer
+        key={current}
+        src={playlist[current].src}
+        title={playlist[current].title}
+      />
       <button
         onClick={nextTrack}
         className="mt-2 rounded-md bg-green-600 px-4 py-2 text-white hover:bg-green-700"
