@@ -1,34 +1,19 @@
 'use client'
-import { useState } from 'react'
 
-interface Track {
-  title: string
+interface AudioPlayerProps {
   src: string
+  title: string
 }
 
-interface AudioPlayerClientProps {
-  playlist: Track[]
-}
-
-export default function AudioPlayerClient({ playlist }: AudioPlayerClientProps) {
-  const [current, setCurrent] = useState(0)
-
-  const nextTrack = () => setCurrent((prev) => (prev + 1) % playlist.length)
-
-  if (!playlist || playlist.length === 0) return null
-
+export default function AudioPlayer({ src, title }: AudioPlayerProps) {
   return (
-    <div className="flex flex-col space-y-4">
-      <audio key={current} controls className="w-full">
-        <source src={playlist[current].src} type="audio/mpeg" />
+    <div className="w-full flex flex-col items-center space-y-2">
+      <p className="text-sm font-medium">{title}</p>
+      <audio controls className="w-full">
+        <source src={src} type="audio/mpeg" />
+        <track kind="captions" srcLang="en" label="English captions" />
         Your browser does not support the audio element.
       </audio>
-      <button
-        onClick={nextTrack}
-        className="mt-2 rounded-md bg-green-600 px-4 py-2 text-white hover:bg-green-700"
-      >
-        Next Track
-      </button>
     </div>
   )
 }
