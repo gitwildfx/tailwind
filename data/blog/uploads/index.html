@@ -100,7 +100,6 @@
   <button id="darkToggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
   <h1>🏗️ Building a Tower 🏗️</h1>
 
-  <!-- Floor 1 -->
   <div class="floor">
     <h2>Floor 1 - Welcome</h2>
     <p>This floor was built with HTML, styled with CSS, and made interactive with JavaScript.</p>
@@ -108,7 +107,6 @@
     <p id="secret" style="display:none;">🎉 Surprise! JavaScript is working.</p>
   </div>
 
-  <!-- Newsletter Signup -->
   <div class="floor">
     <h2>📬 Floor 2 - Newsletter Signup</h2>
     <form id="newsletter-form">
@@ -119,7 +117,6 @@
     <p id="error-msg" style="display:none; color: red;">❌ Please enter a valid email.</p>
   </div>
 
-  <!-- AI Search Floor -->
   <div class="floor">
     <h2>🤖 Floor 3 - AI Search Assistant</h2>
     <input id="ai-search" type="text" placeholder="Ask the AI a question..." />
@@ -174,7 +171,7 @@
         }
       });
 
-      // AI Search Action
+      // AI Search Action (UPDATED for secure serverless function)
       aiBtn.addEventListener("click", async () => {
         const input = aiSearchInput.value.trim();
         if (input === "") {
@@ -185,29 +182,28 @@
         aiResult.textContent = "🤖 Asking AI...";
 
         try {
-          const response = await fetch('https://api.openai.com/v1/chat/completions', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              'Authorization': 'Bearer YOUR_API_KEY_HERE' // Replace with your actual API key securely
-            },
-            body: JSON.stringify({
-              model: "gpt-3.5-turbo",
-              messages: [{ role: "user", content: input }],
-              max_tokens: 150,
-              temperature: 0.7
-            })
+          // MODIFIED: Calling the secure server endpoint
+          const res = await fetch("/api/ask", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ prompt: input })
           });
 
-          if (!response.ok) {
-            throw new Error(`OpenAI API Error: ${response.status} - ${response.statusText}`);
+          if (!res.ok) {
+            throw new Error(`HTTP error! status: ${res.status}`);
           }
 
-          const data = await response.json();
+          const data = await res.json();
+
+          // Check for API errors returned from the serverless function
+          if (data.error) {
+            throw new Error(data.error.message || data.error || "An error occurred with the AI response.");
+          }
+
           const answer = data.choices[0].message.content.trim();
           aiResult.textContent = answer;
         } catch (error) {
-          console.error("Error fetching from OpenAI:", error);
+          console.error("Error fetching from server endpoint:", error);
           aiResult.textContent = `❌ Error: ${error.message}`;
         }
       });
