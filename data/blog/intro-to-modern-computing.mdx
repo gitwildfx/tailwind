@@ -1,33 +1,304 @@
 ---
-title: 'Intro to Modern Computing'
-date: '2024-12-30'
-tags: ['newsletter', 'course', 'tech', 'education']
+title: "Intro to Modern Computing"
+date: "2024-12-30"
+tags: ["newsletter", "course", "tech", "education"]
 draft: false
-summary: 'Foundations for modern code development.'
+summary: "Foundations for modern code development."
 ---
 
 <div className="text-center flex flex-col items-center">
   <img
-    src="/static/images/sc-champion.jpg"
+    src="/static/images/tower.jpg"
     alt="W001: Intro to Modern Computing"
-    className="max-w-full rounded-lg"
+    className="max-w-full rounded-lg shadow-md"
   />
-  <p>AI-Generated (ChatGPT©)</p>
+  <p className="text-sm text-gray-400 mt-2">(StockCake©)</p>
 </div>
+
+---
+
+### Prerequisites
+
+1. Try the <a href="/blog/code-of-the-lion/">"Code of the Lion"</a> challenge.  
+2. Review the <a href="/projects/">Projects</a> tab for labs and more.
+
+---
 
 ### Course Overview
 
-An introduction to programming languages for people of all skill levels. Explore JavaScript, Python, and HTML, along with tools like AI/LLMs to enhance your code development. Stay informed on assignments, announcements, and special topics by signing up for the course newsletter below.
+An introduction to programming languages for people of all skill levels. Explore JavaScript, Python, and HTML, along with tools like AI/LLMs to enhance your code development.
+
+This course follows a unique hands-on objective: **“Building a Tower”** — where each module represents a new floor in your learning journey.
+
+---
+
+### 🧱 Capstone Project: Build Your Own Collaborative Tower
+
+**Audience:** Beginners to intermediate learners  
+**Tools:** HTML, CSS, JavaScript, Python (in later lessons), and AI/LLM integrations  
+**Goal:** Learn how real web apps are structured — and build one yourself, piece by piece, like a tower.
+
+**Challenge:** Create at least three floors:
+1. Personal intro with a reveal button  
+2. Custom newsletter signup  
+3. AI assistant answering a creative prompt
+
+---
+
+### 🧱 Module 1: HTML Foundations – “Floor 1: Welcome”
+
+**Objective:** Understand HTML structure and page elements.
+
+**Key Concepts:**
+- HTML tags: `<!DOCTYPE>`, `<html>`, `<head>`, `<body>`, `<h1>`, `<div>`, `<p>`, `<button>`
+- Semantic structure  
+- Comments and layout via divs
+
+``` html
+<h1>🏗️ Building a Tower 🏗️</h1>
+
+<!-- Floor 1 -->
+<div class="floor">
+  <h2>Floor 1 - Welcome</h2>
+  <p>This floor was built with HTML, styled with CSS, and made interactive with JavaScript.</p>
+  <button id="revealBtn">Reveal Secret</button>
+  <p id="secret" style="display:none;">🎉 Surprise! JavaScript is working.</p>
+</div>
+```
+
+**Exercise:**  
+Write your own HTML floor. Replace the text with your name and add a custom button.
+
+---
+
+### 🎨 Module 2: CSS Styling – Layout & Themes
+
+**Objective:** Learn how to style elements using CSS and variables.
+
+**Key Concepts:**
+- CSS variables (`--bg`, `--text`, etc.)
+- Fonts from Google  
+- Responsive layout  
+- Dark mode (CSS-driven)
+
+``` css
+:root {
+  --bg: #121212;
+  --text: #f5f5f5;
+  --card: #1e1e1e;
+  --border: #444;
+  --btn-bg: #03dac5;
+  --btn-hover: #018786;
+}
+
+body.light-mode {
+  --bg: #f5f5f5;
+  --text: #121212;
+  --card: #ffffff;
+  --border: #ccc;
+  --btn-bg: #6200ee;
+  --btn-hover: #3700b3;
+}
+```
+
+**Exercise:**  
+Change one variable (e.g. `--btn-bg`) and see how it affects the look.  
+Add your own `.floor` section and style it using a different background color.
+
+---
+
+### 🧠 Module 3: JavaScript Events – Interactivity
+
+**Objective:** Use JavaScript to add dynamic behavior (click to reveal, toggle, etc.)
+
+**Key Concepts:**
+- `document.getElementById`
+- Event listeners  
+- DOM manipulation
+
+``` js
+const revealBtn = document.getElementById("revealBtn");
+
+revealBtn.addEventListener("click", () => {
+  document.getElementById("secret").style.display = "block";
+});
+```
+
+**Exercise:**  
+Make a new button that reveals a message like `"Welcome, Developer!"`.
+
+---
+
+### 🌞 Module 4: Theme Toggle – Light & Dark Mode
+
+**Objective:** Toggle between themes using JavaScript.
+
+**Key Concepts:**
+- Class toggling (`body.classList.toggle`)
+- CSS-driven theme switching
+
+``` js
+const toggleBtn = document.getElementById("darkToggle");
+
+function updateToggleIcon() {
+  toggleBtn.textContent = document.body.classList.contains("light-mode") ? "☀️" : "🌙";
+}
+
+toggleBtn.addEventListener("click", () => {
+  document.body.classList.toggle("light-mode");
+  updateToggleIcon();
+});
+```
+
+**Exercise:**  
+Customize the toggle emoji or background color when toggled.
+
+---
+
+### 📬 Module 5: Forms & Validation – Newsletter Signup
+
+**Objective:** Create an HTML form and validate input using JavaScript.
+
+**Key Concepts:**
+- HTML forms and input fields  
+- Prevent default form behavior  
+- Show success or error messages
+
+``` html
+<form id="newsletter-form">
+  <input id="newsletter-email" type="email" placeholder="Enter your email" required />
+  <button type="submit">Sign Up</button>
+</form>
+<p id="success-msg" style="display:none; color: lightgreen;">✅ You have successfully signed up!</p>
+<p id="error-msg" style="display:none; color: red;">❌ Please enter a valid email.</p>
+```
+
+Use JavaScript for validation:
+
+``` js
+newsletterForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const email = document.getElementById("newsletter-email").value.trim();
+
+  if (email === "") {
+    errorMsg.style.display = "block";
+    successMsg.style.display = "none";
+  } else {
+    successMsg.style.display = "block";
+    errorMsg.style.display = "none";
+    newsletterForm.reset();
+  }
+});
+```
+
+**Exercise:**  
+Add a new input for `"Name"` and display a personalized thank-you message.
+
+---
+
+### 🤖 Module 6: APIs & AI Integration – Ask the AI
+
+**Objective:** Learn to connect to external APIs like OpenAI’s Chat API.
+
+**Key Concepts:**
+- Fetch API  
+- Async/await  
+- Error handling  
+- JSON structure
+
+``` js
+// api/ask.js
+export default async function handler(req, res) {
+  if (req.method !== 'POST') {
+    return res.status(405).json({ error: 'Method not allowed' });
+  }
+
+  const { prompt } = req.body;
+  if (!prompt) return res.status(400).json({ error: 'Prompt is required' });
+
+  try {
+    const response = await fetch('https://api.openai.com/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${process.env.OPENAI_API_KEY}` // secure key from Vercel env
+      },
+      body: JSON.stringify({
+        model: "gpt-3.5-turbo",
+        messages: [{ role: "user", content: prompt }],
+        max_tokens: 150,
+        temperature: 0.7
+      })
+    });
+
+    const data = await response.json();
+    res.status(200).json(data);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+}
+```
+
+**Frontend Changes:**
+
+Then, in your Tower project JS, you call your server endpoint instead of OpenAI directly:
+
+``` js
+const res = await fetch("/api/ask", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ prompt: input })
+});
+
+const data = await res.json();
+aiResult.textContent = data.choices[0].message.content.trim();
+```
+
+**✅ Summary:**
+
+-Frontend never sees the API key.  
+-Works with Vercel environment variables (OPENAI_API_KEY).  
+-Completely secure for production.  
+
+*Warning:*
+
+-Do not replace your frontend code with process.env.OPENAI_API_KEY directly.  
+-Instead, move your OpenAI call to a serverless function and call that from the frontend.  
+
+---
+
+**Exercise:**
+Replace `YOUR_API_KEY_HERE` (securely in environment or settings).  
+Change the prompt to ask the AI to say something motivational.
+
+---
+
+## Test Deployment
+Select the <b>deploy</b> button to demo the project in a live HTML environment:
+<div style={{ display: "flex", gap: "5px" }}>
+  <a href="https://www.online-python.com/" target="_blank"> 
+    <img 
+      src="/static/images/deploy.png" 
+      alt="Deploy Image"
+      style={{ width: "118px", height: "33px", objectFit: "contain" }}
+    />
+  </a>
+
+---
+
+### 🔁 Module 7 (Optional): Extend with Python
+
+**Objective:** Bridge into Python for backend or AI script applications.
+
+**Ideas:**
+- Show Python scripts using the OpenAI API  
+- Backend newsletter handling (Flask or FastAPI)  
+- Text generation or data processing examples
+
+---
+
+### Stay informed
+
+For special announcements, new projects, and exclusive offerings, sign up for the WildFx newsletter below:
 
 ► [Newsletter Signup](/#newsletterSection)
-
-### What you'll learn:
-
-◪ Advanced programming workshops<br />
-◪ Real-world projects using AI and LLM tools<br />
-◪ Exclusive guest lectures from industry experts
-
-### Prerequisties:
-
-1. Try the <a href="/blog/code-of-the-lion/">"Code of the Lion"</a> challenge.
-2. Review the <a href="/projects/">Projects</a> tab for labs and more.
