@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Project: Collaborative Tower</title>
 
-  <!-- Google Fonts (absolute URLs, safe for GitHub Pages) -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet" />
 
-  <!-- Inline CSS (paths are all relative to root, no external CSS) -->
+  <!-- Inline CSS -->
   <style>
     :root {
       --bg: #121212;
@@ -127,7 +127,6 @@
     <p id="ai-result"></p>
   </div>
 
-  <!-- JS (all relative paths are fine because it's inline) -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const toggleBtn = document.getElementById("darkToggle");
@@ -140,11 +139,7 @@
       const aiSearchInput = document.getElementById("ai-search");
 
       function updateToggleIcon() {
-        if (document.body.classList.contains("light-mode")) {
-          toggleBtn.textContent = "☀️";
-        } else {
-          toggleBtn.textContent = "🌙";
-        }
+        toggleBtn.textContent = document.body.classList.contains("light-mode") ? "☀️" : "🌙";
       }
       updateToggleIcon();
 
@@ -160,7 +155,6 @@
       newsletterForm.addEventListener("submit", (e) => {
         e.preventDefault();
         const email = document.getElementById("newsletter-email").value.trim();
-
         if (email === "") {
           errorMsg.style.display = "block";
           successMsg.style.display = "none";
@@ -173,13 +167,12 @@
 
       aiBtn.addEventListener("click", async () => {
         const input = aiSearchInput.value.trim();
-        if (input === "") {
+        if (!input) {
           aiResult.textContent = "❌ Please enter a question.";
           return;
         }
 
         aiResult.textContent = "🤖 Asking AI...";
-
         try {
           const res = await fetch("/api/ask", {
             method: "POST",
@@ -188,11 +181,8 @@
           });
 
           if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
-
           const data = await res.json();
-
           if (data.error) throw new Error(data.error.message || data.error || "AI error.");
-
           aiResult.textContent = data.choices[0].message.content.trim();
         } catch (error) {
           console.error("Error fetching from server endpoint:", error);
