@@ -1,7 +1,7 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
   title: 'WildFx.io',
-  author: 'Jason Deramo',
+  author: 'Jason D.',
   headerTitle: 'WildFx.io',
   description: 'How I became a Developer... and so can you.',
   language: 'en-us',
