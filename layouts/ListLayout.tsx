@@ -31,13 +31,13 @@ function Pagination({ totalPages, currentPage }: PaginationProps) {
     <div className="flex items-center justify-between py-10">
       <div>
         {!prevPage ? (
-          <span className="text-gray-500 dark:text-gray-400 cursor-not-allowed">
+          <span className="cursor-not-allowed text-gray-500 dark:text-gray-400">
             ← Previous
           </span>
         ) : (
           <Link
             href={currentPage - 1 === 1 ? `/${basePath}` : `/${basePath}/page/${currentPage - 1}`}
-            className="font-medium text-primary-600 dark:text-primary-400 hover:underline"
+            className="hover:underline dark:text-primary-400 font-medium text-primary-600"
             rel="prev"
           >
             ← Previous
@@ -51,13 +51,11 @@ function Pagination({ totalPages, currentPage }: PaginationProps) {
 
       <div>
         {!nextPage ? (
-          <span className="text-gray-500 dark:text-gray-400 cursor-not-allowed">
-            Next →
-          </span>
+          <span className="cursor-not-allowed text-gray-500 dark:text-gray-400">Next →</span>
         ) : (
           <Link
             href={`/${basePath}/page/${currentPage + 1}`}
-            className="font-medium text-primary-600 dark:text-primary-400 hover:underline"
+            className="hover:underline dark:text-primary-400 font-medium text-primary-600"
             rel="next"
           >
             Next →
@@ -140,7 +138,7 @@ export default function ListLayout({
                       <h2 className="text-2xl font-bold leading-8 tracking-tight">
                         <Link
                           href={`/${path}`}
-                          className="text-gray-900 dark:text-gray-100 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                          className="transition-colors hover:text-primary-600 dark:text-gray-100 dark:hover:text-primary-400 text-gray-900"
                         >
                           {title}
                         </Link>
@@ -155,7 +153,7 @@ export default function ListLayout({
                       )}
                     </div>
 
-                    <p className="prose max-w-none text-gray-600 dark:text-gray-300 line-clamp-3">
+                    <p className="line-clamp-3 max-w-none text-gray-600 dark:text-gray-300 prose">
                       {summary}
                     </p>
                   </div>
