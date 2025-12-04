@@ -37,7 +37,7 @@ function Pagination({ totalPages, currentPage }: PaginationProps) {
         ) : (
           <Link
             href={currentPage - 1 === 1 ? `/${basePath}` : `/${basePath}/page/${currentPage - 1}`}
-            className="hover:underline dark:text-primary-400 font-medium text-primary-600"
+            className="font-medium text-primary-600 hover:underline dark:text-primary-400"
             rel="prev"
           >
             ← Previous
@@ -55,7 +55,7 @@ function Pagination({ totalPages, currentPage }: PaginationProps) {
         ) : (
           <Link
             href={`/${basePath}/page/${currentPage + 1}`}
-            className="hover:underline dark:text-primary-400 font-medium text-primary-600"
+            className="font-medium text-primary-600 hover:underline dark:text-primary-400"
             rel="next"
           >
             Next →
@@ -97,7 +97,7 @@ export default function ListLayout({
               value={searchValue}
               onChange={(e) => setSearchValue(e.target.value)}
               placeholder="Search articles..."
-              className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 pl-10 text-gray-900 placeholder-gray-500 focus:border-primary-500 focus:ring-4 focus:ring-primary-500/10 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-400"
+              className="block w-full rounded-lg border border-gray-300 bg-white px-4 py-3 pl-10 text-gray-900 placeholder-gray-500 focus:border-primary-500 focus:ring-4 focus:ring-primary-500/10 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-400"
             />
             <svg
               className="pointer-events-none absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400 dark:text-gray-500"
@@ -138,7 +138,7 @@ export default function ListLayout({
                       <h2 className="text-2xl font-bold leading-8 tracking-tight">
                         <Link
                           href={`/${path}`}
-                          className="transition-colors hover:text-primary-600 dark:text-gray-100 dark:hover:text-primary-400 text-gray-900"
+                          className="text-gray-900 transition-colors hover:text-primary-600 dark:text-gray-100 dark:hover:text-primary-400"
                         >
                           {title}
                         </Link>
@@ -153,7 +153,7 @@ export default function ListLayout({
                       )}
                     </div>
 
-                    <p className="line-clamp-3 max-w-none text-gray-600 dark:text-gray-300 prose">
+                    <p className="prose line-clamp-3 max-w-none text-gray-600 dark:text-gray-300">
                       {summary}
                     </p>
                   </div>
